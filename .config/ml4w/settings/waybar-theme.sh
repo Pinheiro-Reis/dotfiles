@@ -1,1 +1,1 @@
-/ml4w;/ml4w/light
+/ml4w-minimal;/ml4w-minimal
