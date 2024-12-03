@@ -1,0 +1,8 @@
+[general]
+import = [
+"~/.config/alacritty/apparence.toml",  
+"~/.config/alacritty/cursor.toml",
+"~/.config/alacritty/font.toml",
+"~/.config/alacritty/mouse.toml",
+"~/.config/alacritty/themes/omni.toml",
+]
