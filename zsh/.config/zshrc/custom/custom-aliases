@@ -2,12 +2,12 @@
 ## Unalias ##
 #############
 
-#unalias ls
+unalias ls
 #unalias ll
 #unalias lt
 #unalias shutdown
-#unalias v
-#unalias vim
+unalias v
+unalias vim
 
 ###########
 ## Alias ##
