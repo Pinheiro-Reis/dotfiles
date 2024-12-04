@@ -1,8 +1,23 @@
 return {
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "rebelot/kanagawa.nvim", priority = 1000 },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent_background = true,
+    },
+  },
 
-  { "LazyVim/LazyVim", opts = {
-    colorscheme = "catppuccin",
-  } },
+  {
+    "rebelot/kanagawa.nvim",
+    priority = 1000,
+  },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
 }
