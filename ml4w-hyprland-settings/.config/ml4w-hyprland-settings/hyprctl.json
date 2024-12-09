@@ -1,0 +1,10 @@
+[
+    {
+        "key": "general:border_size",
+        "value": 1
+    },
+    {
+        "key": "general:no_border_on_floating",
+        "value": false
+    }
+]

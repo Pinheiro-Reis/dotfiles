@@ -60,14 +60,14 @@
         //"custom/appmenuicon",
         "hyprland/workspaces",
         "group/links",
-"group/settings",
-        "group/quicklinks",
+        //"group/settings",
+        //"group/quicklinks",
         "custom/empty"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/window",
+        //"hyprland/window",
         "custom/empty"
     ],
 
@@ -78,12 +78,12 @@
         //"backlight",
         "bluetooth",
         "battery", 
-"network",
+        "network",
         "group/hardware",
         "group/tools",
         "custom/exit",
         "clock",
-        "tray",
+        //"tray",
         "custom/ml4w-welcome"
     ]
 }

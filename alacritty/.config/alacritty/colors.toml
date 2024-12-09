@@ -1,0 +1,2 @@
+[general]
+import=["~/.cache/wal/colors-alacritty.toml"]
