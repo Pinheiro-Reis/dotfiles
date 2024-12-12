@@ -60,8 +60,8 @@
         //"custom/appmenuicon",
         "hyprland/workspaces",
         "group/links",
-        //"group/settings",
-        "group/quicklinks",
+        "group/settings",
+        //"group/quicklinks",
         "custom/empty"
     ],
 
@@ -83,7 +83,7 @@
         "group/tools",
         "custom/exit",
         "clock",
-        //"tray",
+        "tray",
         "custom/ml4w-welcome"
     ]
 }
