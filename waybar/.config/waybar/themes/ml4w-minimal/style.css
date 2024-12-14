@@ -447,7 +447,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #tray {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
 }
 
 #tray > .passive {
