@@ -16,6 +16,9 @@
     "margin-left": 0,
     "margin-right": 0,    
     "spacing": 0,
+    
+    // Custom General Settings
+    "height": 10,
 
     // Load Modules
     "include": [
@@ -37,7 +40,8 @@
     // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}   {volume}%",
+        //"format": "{icon}   {volume}%",
+        "format": "{volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -59,8 +63,8 @@
     "modules-left": [
         //"custom/appmenuicon",
         "hyprland/workspaces",
-        "group/links",
-        "group/settings",
+        //"group/links",
+        //"group/settings",
         //"group/quicklinks",
         "custom/empty"
     ],
@@ -68,22 +72,23 @@
     // Modules Center
     "modules-center": [
         //"hyprland/window",
+        "clock",
         "custom/empty"
     ],
 
     // Modules Right    
     "modules-right": [
-        "custom/updates",
+        //"custom/updates",
         "pulseaudio",
         //"backlight",
         "bluetooth",
-        "battery", 
+        "battery",
+        //"clock",
         "network",
         "group/hardware",
         "group/tools",
-        "custom/exit",
-        "clock",
-        "tray",
-        "custom/ml4w-welcome"
+        //"custom/exit",
+        "tray"
+        //"custom/ml4w-welcome"
     ]
 }
