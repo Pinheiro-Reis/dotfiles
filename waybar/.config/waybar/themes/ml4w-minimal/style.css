@@ -13,16 +13,15 @@
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
-/* @import 'style-light.css'; */
-@define-color backgroundlight #FFFFFF;
-@define-color backgrounddark #FFFFFF;
+@import "/home/user/.cache/wal/colors-waybar.css";
+@define-color backgroundlight @foreground;
+@define-color backgrounddark @background;
 @define-color workspacesbackground1 #FFFFFF;
-@define-color workspacesbackground2 #CCCCCC;
+@define-color workspacesbackground2 @color5;
 @define-color bordercolor #FFFFFF;
-@define-color textcolor1 #000000;
-@define-color textcolor2 #000000;
-@define-color textcolor3 #FFFFFF;
-@define-color iconcolor #FFFFFF;
+@define-color textcolor-light @foreground;
+@define-color textcolor-dark @background;
+@define-color iconcolor @foreground;
 
 /* -----------------------------------------------------
  * General 
@@ -49,33 +48,36 @@ window#waybar {
 .modules-left {
     padding-left: 10px;
 }
+.modules-right {
+  padding-right: 10px;
+}
 
 /* -----------------------------------------------------
  * Workspaces 
  * ----------------------------------------------------- */
 
- #workspaces {
+#workspaces {
     margin: 0px 0px 0px 0px;
     border: 0px;
     font-size: 12px;
-    color: @textcolor1;
+    color: @iconcolor;
 }
 
 #workspaces button {
     border: 0px;
     margin: 0px 0px 0px 0px;
     padding:0px 4px 0px 4px;
-    color: @textcolor3;
+    color: @iconcolor;
     transition: all 0.5s ease-in-out;
 }
 
 #workspaces button.active {
-    color: @textcolor1;
+    color: @textcolor-dark;
     background: @workspacesbackground2;
 }
 
 #workspaces button:hover {
-    color: @textcolor1;
+    color: @textcolor-dark;
     background: @workspacesbackground2;
     border-radius: 0px;
 }
@@ -86,14 +88,14 @@ window#waybar {
 
 tooltip {
     border-radius: 10px;
-    background-color: @backgroundlight;
+    background-color: @backgrounddark;
     opacity:0.8;
     padding:20px;
     margin:0px;
 }
 
 tooltip label {
-    color: @textcolor2;
+    color: @foreground;
 }
 
 /* -----------------------------------------------------
@@ -250,7 +252,7 @@ window#waybar.empty #window {
 #custom-appmenuicon {
     font-size: 12px;
     color: @textcolor;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 /* -----------------------------------------------------
@@ -272,7 +274,7 @@ window#waybar.empty #window {
     font-size: 14px;
     color: @textcolor;
     border-radius: 15px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #custom-updates.green {
@@ -293,24 +295,41 @@ window#waybar.empty #window {
 #custom-youtube {
     background-color: @backgroundlight;
     font-size: 12px;
-    color: @textcolor2;
+    color: @textcolor-dark;
     border-radius: 15px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 /* -----------------------------------------------------
- * Hardware Group
+ * System Monitor
  * ----------------------------------------------------- */
 
- #disk,#memory,#cpu,#language {
-    margin:0px;
-    padding:0px;
+#disk {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    font-size: 12px;
+    color:@iconcolor;
+}
+
+#memory {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    font-size: 12px;
+    color:@iconcolor;
+}
+
+#cpu {
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
     font-size: 12px;
     color:@iconcolor;
 }
 
 #language {
-    margin-right:10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    font-size: 12px;
+    color:@iconcolor;
 }
 
 /* -----------------------------------------------------
@@ -319,8 +338,8 @@ window#waybar.empty #window {
 
 #clock {
     font-size: 12px;
-    color: @textcolor;
-    margin: 0px 15px 0px 0px;
+    color: @iconcolor;
+    margin: 0px 0px 0px 0px;
 }
 
 /* -----------------------------------------------------
@@ -329,25 +348,31 @@ window#waybar.empty #window {
 
 #backlight {
     font-size: 12px;
-    color: @textcolor;
+    color: @iconcolor;
     border-radius: 15px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
     background-color: transparent;
 }
 
 /* -----------------------------------------------------
- * Pulseaudio
+ * Audio
  * ----------------------------------------------------- */
 
 #pulseaudio {
     font-size: 12px;
-    color: @textcolor;
+    color: @iconcolor;
     border-radius: 15px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #pulseaudio.muted {
-    color: @textcolor;
+    color: @iconcolor;
+}
+
+#wireplumber {
+  font-size: 12px;
+  margin: 0px 10px 0px 0px;
+  color: @iconcolor;
 }
 
 /* -----------------------------------------------------
@@ -356,17 +381,17 @@ window#waybar.empty #window {
 
 #network {
     font-size: 12px;
-    color: @textcolor;
+    color: @iconcolor;
     border-radius: 15px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 #network.ethernet {
-    color: @textcolor;
+    color: @iconcolor;
 }
 
 #network.wifi {
-    color: @textcolor;
+    color: @iconcolor;
 }
 
 /* -----------------------------------------------------
@@ -375,9 +400,9 @@ window#waybar.empty #window {
 
  #bluetooth, #bluetooth.on, #bluetooth.connected {
     font-size: 12px;
-    color: @textcolor;
+    color: @iconcolor;
     border-radius: 15px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #bluetooth.off {
@@ -392,19 +417,19 @@ window#waybar.empty #window {
 
 #battery {
     font-size: 12px;
-    color: @textcolor;
+    color: @iconcolor;
     border-radius: 15px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #battery.charging, #battery.plugged {
-    color: @textcolor;
+    color: @iconcolor;
 }
 
 @keyframes blink {
     to {
         background-color: @backgroundlight;
-        color: @textcolor2;
+        color: @textcolor-dark;
     }
 }
 
@@ -422,7 +447,7 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #tray {
-    margin:0px 10px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 #tray > .passive {

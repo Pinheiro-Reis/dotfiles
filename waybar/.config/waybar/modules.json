@@ -208,7 +208,8 @@
   "clock": {
     "format": "{:%H:%M %a}",
     "on-click": "ags toggle calendar",
-    "tooltip": false
+    //"tooltip": false
+    "tooltip-format": "{:%Y-%m-%d}"
   },
 
   // System
@@ -219,26 +220,26 @@
 
   // CPU
   "cpu": {
-    "format": "C: {usage}%\t",
+    "format": "C: {usage}%",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Memory
   "memory": {
-    "format": "M: {}%\t",
+    "format": "M: {}%",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Harddisc space used
   "disk": {
     "interval": 30,
-    "format": "D: {percentage_used}%\t",
+    "format": "D: {percentage_used}%",
     "path": "/home/user",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   "hyprland/language": {
-    "format": "L: {short}"
+    "format": "L: {short}    "
   },
 
   // Group Hardware
@@ -295,12 +296,12 @@
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": "   {signalStrength}%",
-    "format-ethernet": "  {ifname}",
-    "format-disconnected": "Disconnected",
-    "tooltip-format": " {ifname} via {gwaddri}",
-    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "format-wifi": "WF: {signalStrength}%",
+    "format-ethernet": "ETH: {ifname}",
+    "format-disconnected": "OFF",
+    "tooltip-format": "{ifname} via {gwaddri}",
+    "tooltip-format-wifi": "WF: {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "ETH:\t{ifname}\nIP:\t\t{ipaddr}\nUP:\t\t{bandwidthUpBits}\nDOWN:\t{bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
     "on-click": "~/.config/ml4w/settings/networkmanager.sh",
@@ -324,24 +325,34 @@
   },
 
   // Pulseaudio
-  "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": " ",
-      "hands-free": " ",
-      "headset": " ",
-      "phone": " ",
-      "portable": " ",
-      "car": " ",
-      "default": ["", "", ""]
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        //"format": "{volume}%",
+        "format-bluetooth": "{volume}% ",
+        "format-bluetooth-muted": "{format_muted}: ",
+        "format-muted": "MUTED",
+        "format-source": "",
+        "format-source-muted": " ",
+        "format-icons": {
+          "headphone": "HP:",
+          "headset": "HS:",
+          "hands-free": "HF:",
+          "phone": "PH:",
+          "portable": "PR:",
+          "car": "CR:",
+          "default": [" ", " ", " "]
+        },
+        "on-click": "kitty alsamixer"
     },
-    "on-click": "pavucontrol"
+
+  "wireplumber": {
+      "format": "VOL: {volume}%",
+      "format-muted": "MUTED    ",
+      "format-bluetooth": "{volume}% {icon}",
+      "scroll-step": 2,
+      "on-click": "pavucontrol",
+      "tooltip": false
   },
 
   // Bluetooth
