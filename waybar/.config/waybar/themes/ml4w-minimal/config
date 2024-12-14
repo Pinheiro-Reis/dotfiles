@@ -18,7 +18,7 @@
     "spacing": 0,
     
     // Custom General Settings
-    "height": 10,
+    //"height": 10,
 
     // Load Modules
     "include": [
@@ -40,20 +40,20 @@
     // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        //"format": "{icon}   {volume}%",
-        "format": "{volume}%",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format": "{icon} {volume}%",
+        //"format": "{volume}%",
+        "format-bluetooth": "{volume}% ",
+        "format-bluetooth-muted": "{format_muted}: ",
+        "format-muted": "MUTE",
+        "format-source": "",
+        "format-source-muted": " ",
         "format-icons": {
-        "headphone": " ",
-        "hands-free": " ",
-        "headset": " ",
-        "phone": " ",
-        "portable": " ",
-        "car": " ",
+        "headphone": "HP:",
+        "headset": "HS:",
+        "hands-free": "HF:",
+        "phone": "PH:",
+        "portable": "PR:",
+        "car": "CR:",
         "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
@@ -85,8 +85,12 @@
         "battery",
         //"clock",
         "network",
-        "group/hardware",
-        "group/tools",
+        //"group/hardware",
+        "cpu",
+        "memory",
+        "disk",
+        "hyprland/language",
+        //"group/tools",
         //"custom/exit",
         "tray"
         //"custom/ml4w-welcome"

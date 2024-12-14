@@ -219,38 +219,38 @@
 
   // CPU
   "cpu": {
-    "format": "/ C {usage}% ",
+    "format": "C: {usage}%\t",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Memory
   "memory": {
-    "format": "/ M {}% ",
+    "format": "M: {}%\t",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Harddisc space used
   "disk": {
     "interval": 30,
-    "format": "D {percentage_used}% ",
-    "path": "/",
+    "format": "D: {percentage_used}%\t",
+    "path": "/home/user",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   "hyprland/language": {
-    "format": "/ K {short}"
+    "format": "L: {short}"
   },
 
   // Group Hardware
-  "group/hardware": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": false
-    },
-    "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
-  },
+//  "group/hardware": {
+//    "orientation": "inherit",
+//    "drawer": {
+//      "transition-duration": 300,
+//      "children-class": "not-memory",
+//      "transition-left-to-right": false
+//    },
+//    "modules": ["custom/system", "disk", "cpu", "memory", "hyprland/language"]
+//  },
 
   // Group Tools
   "group/tools": {
