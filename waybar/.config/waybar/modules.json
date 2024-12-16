@@ -220,26 +220,26 @@
 
   // CPU
   "cpu": {
-    "format": "C: {usage}%",
+    "format": "CPU: {usage}%",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Memory
   "memory": {
-    "format": "M: {}%",
+    "format": "MEM: {}%",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   // Harddisc space used
   "disk": {
     "interval": 30,
-    "format": "D: {percentage_used}%",
+    "format": "DSK: {percentage_used}%",
     "path": "/home/user",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
   "hyprland/language": {
-    "format": "L: {short}    "
+    "format": "LNG: {short}    "
   },
 
   // Group Hardware
