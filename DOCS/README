@@ -1,2 +1,9 @@
+INSTALL
+Use stow and, if necessary, rename actual config file (stow don't overwrites nothing, just adopt, but becareful)
+
+NOTES
+1. The Easy Effects equalizer have non default balance
+
+
 ATRIBUITION
 - The ML4W Dotfiles for Hyprland <https://github.com/mylinuxforwork/dotfiles.git>
