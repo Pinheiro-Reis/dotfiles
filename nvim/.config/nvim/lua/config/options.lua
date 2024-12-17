@@ -10,4 +10,5 @@ vim.opt.wrap = true -- disable line wrapping
 
 -- [Identation size and config]
 vim.opt.shiftwidth = 4
-vim.g.autoformat = false
+vim.opt.tabstop = 4
+vim.g.autoformat = true
