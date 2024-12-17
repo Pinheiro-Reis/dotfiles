@@ -7,3 +7,7 @@ vim.opt.relativenumber = false -- Relative line numbers
 
 -- [Lines]
 vim.opt.wrap = true -- disable line wrapping
+
+-- [Identation size and config]
+vim.opt.shiftwidth = 4
+vim.g.autoformat = false
