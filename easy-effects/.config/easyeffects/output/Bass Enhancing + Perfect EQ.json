@@ -10,7 +10,7 @@
             "output-gain": 0.0
         },
         "equalizer#0": {
-            "balance": -17.0,
+            "balance": -19.0,
             "bypass": false,
             "input-gain": -2.0,
             "left": {
