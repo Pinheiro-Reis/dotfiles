@@ -10,7 +10,7 @@
             "output-gain": 0.0
         },
         "equalizer#0": {
-            "balance": -19.0,
+            "balance": -20.0,
             "bypass": false,
             "input-gain": -2.0,
             "left": {
@@ -125,7 +125,7 @@
                     "width": 4.0
                 }
             },
-            "mode": "IIR",
+            "mode": "FIR",
             "num-bands": 10,
             "output-gain": 0.0,
             "pitch-left": 0.0,
