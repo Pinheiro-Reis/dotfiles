@@ -13,7 +13,7 @@
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
-@import "/home/user/.cache/wal/colors-waybar.css";
+@import "/home/Admin/.cache/wal/colors-waybar.css";
 @define-color backgroundlight @foreground;
 @define-color backgrounddark @background;
 @define-color workspacesbackground1 #FFFFFF;
