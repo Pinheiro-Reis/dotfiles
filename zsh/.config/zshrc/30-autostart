@@ -21,3 +21,10 @@ else
         echo "Start Hyprland with command Hyprland"
     fi
 fi
+
+# -----------------------------------------------------
+# Tmux
+# -----------------------------------------------------
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
