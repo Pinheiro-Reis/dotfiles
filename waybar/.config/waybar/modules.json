@@ -234,7 +234,7 @@
   "disk": {
     "interval": 30,
     "format": "DSK: {percentage_used}%",
-    "path": "/home/user",
+    "path": "/home/Admin",
     "on-click": "~/.config/ml4w/settings/system-monitor.sh"
   },
 
