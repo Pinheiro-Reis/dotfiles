@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 7zip
 a52dec
 abseil-cpp
@@ -128,7 +129,6 @@ filesystem
 findutils
 firefox
 flac
-flameshot
 flatpak
 flex
 fmt
@@ -275,7 +275,6 @@ kdecoration
 keyutils
 kglobalaccel
 kguiaddons
-kguiaddons5
 ki18n
 kiconthemes
 kio
@@ -1118,6 +1117,7 @@ webrtc-audio-processing-1
 wget
 which
 wireplumber
+wl-clipboard
 woff2
 wpa_supplicant
 x264
