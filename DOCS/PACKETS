@@ -1,6 +1,7 @@
 [1m[33m -> [0m[0mAvoid running yay as root/sudo.
 7zip
 a52dec
+aalib
 abseil-cpp
 accounts-qml-module
 acl
@@ -33,6 +34,7 @@ audit
 autoconf
 automake
 avahi
+babl
 base
 base-devel
 bash
@@ -74,6 +76,7 @@ composefs
 containerd
 copyq
 coreutils
+cpio
 cronie
 cryptsetup
 curl
@@ -98,8 +101,6 @@ discount
 djvulibre
 docker
 docker-compose
-dotnet-host
-dotnet-runtime-6.0
 double-conversion
 duktape
 dunst
@@ -151,12 +152,14 @@ gd
 gdbm
 gdk-pixbuf2
 gedit
+gegl
 geoclue
 geocode-glib-2
 geocode-glib-common
 gettext
 ghostscript
 giflib
+gimp
 girara
 git
 gjs
@@ -198,10 +201,12 @@ gssdp
 gst-plugins-bad-libs
 gst-plugins-base
 gst-plugins-base-libs
+gst-plugins-good
 gstreamer
 gtest
 gtk-layer-shell
 gtk-update-icon-cache
+gtk-vnc
 gtk2
 gtk3
 gtk4
@@ -209,6 +214,7 @@ gtk4-layer-shell
 gtkmm
 gtkmm-4.0
 gtkmm3
+gtksourceview4
 guile
 gum
 gumbo-parser
@@ -241,6 +247,8 @@ iana-etc
 icu
 ijs
 imagemagick
+imath
+imlib2
 iniparser
 iproute2
 iptables
@@ -304,6 +312,7 @@ ladspa
 lame
 lapack
 lcms2
+lensfun
 leptonica
 less
 lib32-alsa-lib
@@ -394,7 +403,10 @@ libbluray
 libbpf
 libbs2b
 libbsd
+libburn
 libbytesize
+libcaca
+libcacard
 libcanberra
 libcap
 libcap-ng
@@ -413,9 +425,11 @@ libdbusmenu-qt5
 libdca
 libde265
 libdecor
+libdeflate
 libdisplay-info
 libdovi
 libdrm
+libdv
 libdvbpsi
 libdvdnav
 libdvdread
@@ -443,6 +457,7 @@ libgedit-gfls
 libgedit-gtksourceview
 libgedit-tepl
 libgee
+libgexiv2
 libgirepository
 libgit2
 libglvnd
@@ -463,6 +478,8 @@ libimobiledevice-glue
 libinih
 libinput
 libisl
+libisoburn
+libisofs
 libixion
 libjpeg-turbo
 libjxl
@@ -477,7 +494,6 @@ liblo
 liblqr
 liblsp-r3d-glx-lib
 libluv
-liblzf
 libmad
 libmalcontent
 libmanette
@@ -495,6 +511,7 @@ libmpeg2
 libmspub
 libmupdf
 libmwaw
+libmypaint
 libmysofa
 libnbd
 libndp
@@ -519,6 +536,7 @@ libodfgen
 libogg
 libopenmpt
 liborcus
+libosinfo
 libp11-kit
 libpagemaker
 libpaper
@@ -536,6 +554,7 @@ libpsl
 libpulse
 libqxp
 libraqm
+libraw
 libraw1394
 libreoffice-fresh
 librevenge
@@ -545,6 +564,7 @@ libsamplerate
 libsasl
 libseccomp
 libsecret
+libshout
 libsigc++
 libsigc++-3.0
 libsigsegv
@@ -555,6 +575,7 @@ libsodium
 libsoup3
 libsoxr
 libspectre
+libspiro
 libssh
 libssh2
 libstaroffice
@@ -570,7 +591,6 @@ libtiff
 libtirpc
 libtommath
 libtool
-libtpms
 libunibreak
 libunistring
 libunwind
@@ -585,9 +605,10 @@ libva
 libvdpau
 libverto
 libvirt
+libvirt-glib
+libvirt-python
 libvisio
 libvlc
-libvncserver
 libvorbis
 libvpl
 libvpx
@@ -595,6 +616,7 @@ libvterm
 libwacom
 libwebp
 libwireplumber
+libwmf
 libwpd
 libwps
 libx11
@@ -691,6 +713,7 @@ mpv
 msgpack-c
 mtdev
 mujs
+mypaint-brushes1
 ncdu
 ncurses
 neon
@@ -717,12 +740,14 @@ onetbb
 oniguruma
 openal
 opencore-amr
+openexr
 openjpeg2
 openssh
 openssl
 openxr
 opus
 orc
+osinfo-db
 ostree
 otf-aurulent-nerd
 otf-codenewroman-nerd
@@ -763,12 +788,12 @@ perl-json-xs
 perl-mailtools
 perl-timedate
 perl-types-serialiser
+phodav
 phonon-qt6
 phonon-qt6-vlc
 php
 php-apache
 pinentry
-pinta
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -785,6 +810,7 @@ polkit-gnome
 polkit-qt6
 poppler
 poppler-data
+poppler-glib
 poppler-qt6
 popt
 portaudio
@@ -897,14 +923,12 @@ qt6-quick3dphysics
 qt6-quickeffectmaker
 qt6-quicktimeline
 qt6-remoteobjects
-qt6-scxml
 qt6-sensors
 qt6-serialbus
 qt6-serialport
 qt6-shadertools
 qt6-speech
 qt6-svg
-qt6-tools
 qt6-translations
 qt6-virtualkeyboard
 qt6-wayland
@@ -933,7 +957,6 @@ sbc
 scdoc
 sdbus-cpp
 sddm
-sdl12-compat
 sdl2
 seatd
 sed
@@ -959,6 +982,8 @@ soundtouch
 spdlog
 speex
 speexdsp
+spice-gtk
+spice-protocol
 spirv-tools
 sqlite
 sratom
@@ -968,6 +993,7 @@ steam
 stow
 subversion
 sudo
+suitesparse
 svt-av1
 syndication
 systemd
@@ -1080,6 +1106,7 @@ ttf-ubuntu-nerd
 ttf-victor-mono-nerd
 ttf-zed-mono-nerd
 tumbler
+twolame
 tzdata
 uchardet
 udisks2
@@ -1087,6 +1114,7 @@ ufw
 unibilium
 unzip
 upower
+usbredir
 usbutils
 util-linux
 util-linux-libs
@@ -1095,11 +1123,10 @@ vapoursynth
 vid.stab
 vim
 vim-runtime
-virtualbox
-virtualbox-ext-vnc
+virt-install
+virt-manager
 virtualbox-guest-iso
 virtualbox-guest-utils
-virtualbox-host-modules-arch
 vlc
 vmaf
 volume_key
@@ -1108,11 +1135,11 @@ vte3
 vulkan-headers
 vulkan-icd-loader
 vulkan-radeon
+wavpack
 waybar
 wayland
 wayland-protocols
 webkit2gtk-4.1
-webp-pixbuf-loader
 webrtc-audio-processing-1
 wget
 which
