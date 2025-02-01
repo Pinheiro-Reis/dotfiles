@@ -20,6 +20,7 @@ dmidecode
 dnsmasq
 docker
 docker-compose
+dotnet-sdk
 easyeffects
 efibootmgr
 eza
@@ -101,6 +102,7 @@ python-pywal
 python-screeninfo
 qemu-full
 qjackctl
+qrencode
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-svg
@@ -172,6 +174,7 @@ thunar
 thunderbird
 timeshift
 tmux
+torbrowser-launcher
 ttf-0xproto-nerd
 ttf-3270-nerd
 ttf-agave-nerd
@@ -235,6 +238,7 @@ ufw
 unzip
 vim
 virt-manager
+visual-studio-code-bin
 waybar
 waypaper
 wget
