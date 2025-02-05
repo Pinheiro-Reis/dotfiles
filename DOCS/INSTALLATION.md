@@ -284,9 +284,51 @@ Please be aware that these names should be substituted with the actual device pa
 
 1.  Reboot!
 
+# Pos installation
+
+## Create encrypted external drive
+
+Use cryptsetup to encrypt device
+
+        cryptsetup --use-urandom luksFormat /dev/<external-disk>
+
+**Optional, just for automation:**
+1. Create keyfile
+
+        openssl genrsa -out <path/to/key> 4096
+
+1. Add key to encrypted device
+
+        crypsetup luksAddKey /dev/<external-disk> <path/to/key>
+
+1. Add device to /etc/crypttab to autodecrypt
+
+        vim /etc/crypttab
+
+        --> <device-name>       UUID=<device-UUID-code>      <path/to/key>    luks,<options>
+
+        # Example dont using keyfile
+        --> BACKUP      UUID=738c6426-3ef5-48d5-a837-b437c722802f       -       luks
+
+        # Example using
+        --> BACKUP      UUID=73481cae-1b80-400c-bef3-4f4a2b2a9a1e       /root/backup-key        luks
+
+1. Add the external drive to /etc/fstab to automount (sometimes useless)
+
+        # To help you with information about mounted drive (dont simply overwrite fstab)
+        genfstab -U /
+
+        vim /etc/fstab
+
+        --> UUID=<device-UUID-code>     <path/to/mount> <type> <options>  <dump>  <fsck>
+
+        #For example
+
+        --> UUID=8d90233f-36ff-434d-bc5a-de6d596719f1       /run/timeshift/backup   ext4            rw,relatime     0 2
+
 # Notes
 
-## Backup LUKS Header
+## Backup LUKS Headers
 
 It is important to make a backup of LUKS header so that you can access your data in case of emergency
 (if your LUKS header somehow gets damaged).
