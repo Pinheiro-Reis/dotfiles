@@ -2,12 +2,14 @@
 WILL INCLUDES GUIDES TO:
 * +LUKS encryption
 * +ext4 filesystem
+* -btrfs filesystem
 * +LVM under LUKS
 * +UEFI mode
 * +Busybox-based initramfs
 * +Systemd-based initramfs
-* -Decrypt of both devices at same time
+* +Decrypt both devices at same time
 * -Zram implementation
+* -Zswap implementation
 
 
 (+ means already included and - means coming soon)
@@ -301,7 +303,7 @@ Use cryptsetup to encrypt device
 
         crypsetup luksAddKey /dev/<external-disk> <path/to/key>
 
-1. Add device to /etc/crypttab to autodecrypt
+1. Add device to /etc/crypttab for autodecrypt it
 
         vim /etc/crypttab
 
