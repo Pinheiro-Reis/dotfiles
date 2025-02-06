@@ -221,21 +221,21 @@ Please be aware that these names should be substituted with the actual device pa
 
         --> KEYMAP=<keyboard-layout>
 
-1. Install LVM package
+1. Install LVM package and some UI
 
-        pacman -S lvm2
+        pacman -S lvm2 plymouth
 
 1.  Configure `mkinitcpio` with modules needed to create the initramfs image.
         
         # For busybox-based initramfs
         vim /etc/mkinitcpio.conf
 
-        --> HOOKS=(base udev autodetect microcode modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck)
+        --> HOOKS=(base udev autodetect microcode modconf kms plymouth keyboard keymap consolefont block encrypt lvm2 filesystems fsck)
 
         # For systemd-based initramfs
         vim /etc/mkinitcpio.conf
 
-        --> HOOKS=(base systemd autodetect microcode modconf kms keyboard sd-vconsole block sd-encrypt lvm2 filesystems fsck)
+        --> HOOKS=(base systemd autodetect microcode modconf kms plymouth keyboard sd-vconsole block sd-encrypt lvm2 filesystems fsck)
 
 1. Recreate the initramfs image:
 
