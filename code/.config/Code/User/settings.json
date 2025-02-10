@@ -21,4 +21,5 @@
     "window.menuBarVisibility": "toggle",
     "window.confirmSaveUntitledWorkspace": false,
     "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
 }

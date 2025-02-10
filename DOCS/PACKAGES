@@ -82,7 +82,9 @@ php-apache
 pipewire-alsa
 pipewire-pulse
 plocate
+plymouth
 polkit-gnome
+python-ipykernel
 python-notify2
 python-pip
 python-pipx
@@ -180,6 +182,7 @@ virt-viewer
 visual-studio-code-bin
 waybar
 waypaper
+wev
 wget
 wine
 xdg-desktop-portal-gtk

@@ -10,9 +10,9 @@
   <property name="misc-date-style" type="string" value="THUNAR_DATE_STYLE_YYYYMMDD"/>
   <property name="last-location-bar" type="string" value="ThunarLocationEntry"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,149,146,120,143,338,50,50,920,50,113,58,50,359"/>
-  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
-  <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
+  <property name="last-details-view-column-widths" type="string" value="50,150,150,120,143,338,50,50,315,50,113,72,50,180"/>
+  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_DATE_ACCESSED"/>
+  <property name="last-sort-order" type="string" value="GTK_SORT_DESCENDING"/>
   <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_ACCESSED,THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_NAME,THUNAR_COLUMN_PERMISSIONS,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
   <property name="last-details-view-column-order" type="string" value="THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_SIZE_IN_BYTES,THUNAR_COLUMN_TYPE,THUNAR_COLUMN_DATE_ACCESSED,THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_PERMISSIONS,THUNAR_COLUMN_LOCATION,THUNAR_COLUMN_GROUP,THUNAR_COLUMN_MIME_TYPE,THUNAR_COLUMN_DATE_CREATED,THUNAR_COLUMN_OWNER,THUNAR_COLUMN_RECENCY,THUNAR_COLUMN_DATE_DELETED"/>
   <property name="last-show-hidden" type="bool" value="false"/>
