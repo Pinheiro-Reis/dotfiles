@@ -1,41 +1,39 @@
-# (In Process) Installing Arch Linux with Full Disk, External Backup and Zram Encryption, GRUB, LVM, Systemd and Busybox-based Initramfs
-WILL INCLUDES GUIDES TO:
-* +LUKS encryption
-* +ext4 filesystem
-* -btrfs filesystem
-* +LVM under LUKS
-* +UEFI mode
-* +Busybox-based initramfs
-* +Systemd-based initramfs
-* +Decrypt both devices at same time
-* -Zram implementation
-* -Zswap implementation
+# (In Process) Installing Arch Linux with Full Disk, External Backup, Zram Encryption, GRUB, LVM, Systemd, and Busybox-based Initramfs
 
-
-(+ means already included and - means coming soon)
+## Includes Guides To:
+* **LUKS encryption** (included)
+* **ext4 filesystem** (included)
+* **btrfs filesystem** (included)
+* **LVM under LUKS** (included)
+* **UEFI mode** (included)
+* **Busybox-based initramfs** (included)
+* **Systemd-based initramfs** (included)
+* **Decrypt both devices at the same time** (included)
+* **Zram implementation** (included)
+* **Zswap implementation** (included)
 
 If you're only interested in installing Linux and not setting up dual boot with Windows, feel free to skip the Windows-related sections.
 
-# Prepare the System
+## Prepare the System
 
 Before we dive into the installation process, let's ensure that your system is ready:
 
 - **Data Backup:** Make sure you've backed up all your important data. We're about to make significant changes, and it's always wise to have a safety net.
 - **UEFI Mode:** In your system's BIOS settings, set the boot mode to UEFI.
 
-# Prepare the USB Drive
+## Prepare the USB Drive
 
 - **Ventoy Installation:** Start by installing [Ventoy](https://github.com/ventoy/Ventoy) on your USB drive. Ventoy is a versatile tool that allows you to easily create a multi-boot USB drive.
 - **Download Arch ISO:** Head to [Arch Linux's official website](https://www.archlinux.org/download/) and download the Arch ISO image. Copy it to your USB drive.
 
-# Disk Partition Structure
+## Disk Partition Structure
 
 Here is an example to give you a clear picture of what the final disk partition structure will look like. If you're not interested in installing Windows, you can simply ignore the green parts.
 
-| CRYPTLV 1            | CRYPTLV 2            | CRYPTLV 3            | Boot Partition | EFI Parition|
-|----------------------|----------------------|----------------------|----------------|-------------|
-| /                    | [SWAP]               | /home                | /boot          | /efi        |
-| /dev/mapper/vg0-root | /dev/mapper/vg0-swap | /dev/mapper/vg0-home | /dev/sda2      | /dev/sda1   |
+| CRYPTLV 1            | CRYPTLV 2            | CRYPTLV 3            | Boot Partition | EFI Partition |
+|----------------------|----------------------|----------------------|----------------|---------------|
+| /                    | [SWAP]               | /home                | /boot          | /efi          |
+| /dev/mapper/vg0-root | /dev/mapper/vg0-swap | /dev/mapper/vg0-home | /dev/sda2      | /dev/sda1     |
 
 Please be aware that these names should be substituted with the actual device paths relevant to your system configuration:
 
@@ -46,41 +44,36 @@ Please be aware that these names should be substituted with the actual device pa
 | Boot Partition | `/dev/<boot-disk>`   | `/dev/sda6`, `/dev/nvme0n1p2` |
 | LUKS Partition | `/dev/<luks-disk>`   | `/dev/sda7`, `/dev/nvme0n1p3` |
 
-# Install Arch Linux
+## Install Arch Linux
 
-1.  Connect the USB drive and boot from the Arch Linux ISO.
+1. Connect the USB drive and boot from the Arch Linux ISO.
+2. Set your keyboard layout:
 
-1. Set your keyboard layout
+        loadkeys <keyboard-layout>
 
-        loakeys <keyboard-layout>
-
-1. Set pacman configs, where "number" could be what you want, but not so higher
+3. Set pacman configs, where "number" could be what you want, but not too high:
 
         vim /etc/pacman.conf
 
-        # Uncomment and modifiy
-        --> ParallelDownloads = <number>
+        # Uncomment and modify
+        ParallelDownloads = <number>
 
-1.  Make sure the system is booted in UEFI mode.
-    The following command should display the directory contents without error.
+4. Make sure the system is booted in UEFI mode. The following command should display the directory contents without error:
 
         ls /sys/firmware/efi/efivars
 
-1.  Connect to the internet.
-    A wired connection is preferred since it's easier to connect.
-    [More info](https://wiki.archlinux.org/index.php/Installation_guide#Connect_to_the_internet)
+5. Connect to the internet. A wired connection is preferred since it's easier to connect. [More info](https://wiki.archlinux.org/index.php/Installation_guide#Connect_to_the_internet)
 
-1.  Run `fdisk` and follow until step 11 to create Linux partitions.
+6. Run `fdisk` and follow until step 11 to create Linux partitions:
 
         fdisk /dev/<your-disk>
 
-1.  Create an empty GPT partition table using the `g` command.
-    (**WARNING:** This will erase the entire disk.)
+7. Create an empty GPT partition table using the `g` command. (**WARNING:** This will erase the entire disk.)
 
         Command (m for help): g
         Created a new GPT disklabel (GUID: ...).
 
-1.  Create the EFI partition (`/dev/<efi-disk>`):
+8. Create the EFI partition (`/dev/<efi-disk>`):
 
         Command (m for help): n
         Partition number: <Press Enter>
@@ -90,7 +83,7 @@ Please be aware that these names should be substituted with the actual device pa
         Command (m for help): t
         Partition type or alias (type L to list all): uefi
 
-1.  Create the Boot partition (`/dev/<boot-disk>`):
+9. Create the Boot partition (`/dev/<boot-disk>`):
 
         Command (m for help): n
         Partition number: <Press Enter>
@@ -100,7 +93,7 @@ Please be aware that these names should be substituted with the actual device pa
         Command (m for help): t
         Partition type or alias (type L to list all): linux
 
-1.  Create the LUKS partition (`/dev/<luks-disk>`):
+10. Create the LUKS partition (`/dev/<luks-disk>`):
 
         Command (m for help): n
         Partition number: <Press Enter>
@@ -110,55 +103,48 @@ Please be aware that these names should be substituted with the actual device pa
         Command (m for help): t
         Partition type or alias (type L to list all): linux
 
-1.  Print the partition table using the `p` command and check that everything is OK:
+11. Print the partition table using the `p` command and check that everything is OK:
 
         Command (m for help): p
 
-1.  Write changes to the disk using the `w` command.
-    (Make sure you know what you're doing before running this command).
+12. Write changes to the disk using the `w` command. (Make sure you know what you're doing before running this command).
 
         Command (m for help): w
 
-1.  Format the EFI and Boot Partitions.
+13. Format the EFI and Boot Partitions:
 
         mkfs.fat -F 32 /dev/<efi-disk>
         mkfs.ext4 /dev/<boot-disk>
 
-1.  Set up the encrypted partition.
-    You can choose any other name instead of `luksLvmRoot`.
+14. Set up the encrypted partition. You can choose any other name instead of `luksLvmRoot`:
 
         cryptsetup --use-urandom luksFormat /dev/<luks-disk>
         cryptsetup open /dev/<luks-disk> luksLvmRoot
 
-1.  Create an LVM volume group.
-    You can choose any other name instead of `vg0`.
+15. Create an LVM volume group. You can choose any other name instead of `vg0`:
 
         pvcreate /dev/mapper/luksLvmRoot
         vgcreate vg0 /dev/mapper/luksLvmRoot
 
-1.  Create LVM partitions (logical volumes).
-
-    (**Update:** I don't create swap volume on disk anymore.
-    Instead, I create a [zram](https://wiki.archlinux.org/title/Zram) device as swap space
-    after finishing the installation process.)
-
-    We create logical volumes for swap, root (`/`), and home (`/home`).
-    Leave 256MiB of free space in the volume group because the `e2scrub` command requires
-    the LVM volume group to have at least 256MiB of unallocated space to dedicate
-    to the snapshot. For an 1TB disk:
+16. Create LVM partitions (logical volumes). (**Update:** I don't create swap volume on disk anymore. Instead, I create a [zram](https://wiki.archlinux.org/title/Zram) device as swap space after finishing the installation process.) We create logical volumes for swap, root (`/`), and home (`/home`). Leave 256MiB of free space in the volume group because the `e2scrub` command requires the LVM volume group to have at least 256MiB of unallocated space to dedicate to the snapshot. For a 1TB disk:
 
         lvcreate --size 10G vg0 --name swap
         lvcreate --size 100G vg0 --name root
         lvcreate -l +100%FREE vg0 --name home
         lvreduce --size -256M vg0/home
 
-1.  Format logical volumes.
+17. Format logical volumes:
 
         mkswap /dev/mapper/vg0-swap
         mkfs.ext4 /dev/mapper/vg0-root
         mkfs.ext4 /dev/mapper/vg0-home
 
-1.  Mount new filesystems.
+    **Alternative: Format logical volumes with btrfs:**
+
+        mkfs.btrfs /dev/mapper/vg0-root
+        mkfs.btrfs /dev/mapper/vg0-home
+
+18. Mount new filesystems:
 
         mount /dev/mapper/vg0-root /mnt
         mount --mkdir /dev/<efi-disk> /mnt/efi
@@ -166,27 +152,32 @@ Please be aware that these names should be substituted with the actual device pa
         mount --mkdir /dev/mapper/vg0-home /mnt/home
         swapon /dev/mapper/vg0-swap
 
-1.  Install the base system.
-    We also install some useful packages like `git`, `vim`, and `sudo`.
+    **Alternative: Mount new filesystems with btrfs subvolumes:**
+
+        mount -o subvol=@ /dev/mapper/vg0-root /mnt
+        mount --mkdir -o subvol=@home /dev/mapper/vg0-home /mnt/home
+        mount --mkdir /dev/<efi-disk> /mnt/efi
+        mount --mkdir /dev/<boot-disk> /mnt/boot
+        swapon /dev/mapper/vg0-swap
+
+19. Install the base system. We also install some useful packages like `git`, `vim`, and `sudo`:
 
         pacstrap -K /mnt base base-devel linux linux-firmware openssh git vim sudo
 
-1.  Generate `/etc/fstab`. This file can be used to define how disk partitions,
-    various other block devices, or remote filesystems should be mounted into the
-    filesystem.
+20. Generate `/etc/fstab`. This file can be used to define how disk partitions, various other block devices, or remote filesystems should be mounted into the filesystem:
 
         genfstab -U /mnt > /mnt/etc/fstab
 
         # Check with
         cat /mnt/etc/fstab
 
-1.  Enter the new system.
+21. Enter the new system:
 
         arch-chroot /mnt /bin/bash
 
-1. Execute `step 3` operation
+22. Execute `step 3` operation.
 
-1.  Set TimeZone.
+23. Set TimeZone:
 
         # See available timezones:
         ls /usr/share/zoneinfo/
@@ -194,38 +185,38 @@ Please be aware that these names should be substituted with the actual device pa
         # Set timezone (you may should use other):
         ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 
-1.  Run hwclock(8) to generate `/etc/adjtime`.
+24. Run hwclock(8) to generate `/etc/adjtime`:
 
         hwclock --systohc
 
-1.  Set Locale.
+25. Set Locale:
 
         vim /etc/locale.gen (uncomment en_US.UTF-8 UTF-8 or another)
         locale-gen
         echo LANG=en_US.UTF-8 > /etc/locale.conf
 
-1.  Set hostname.
+26. Set hostname:
 
         echo YourHostName > /etc/hostname
 
-1.  Create a user.
+27. Create a user:
 
         useradd -m -G wheel --shell /bin/bash YourUserName
         passwd YourUserName
         visudo
         # ---> Uncomment "%wheel ALL=(ALL) ALL"
 
-1. Make keyboard config persistent
+28. Make keyboard config persistent:
 
         vim /etc/vconsole.conf
 
         --> KEYMAP=<keyboard-layout>
 
-1. Install LVM package and some UI
+29. Install LVM package and some UI:
 
         pacman -S lvm2 plymouth
 
-1.  Configure `mkinitcpio` with modules needed to create the initramfs image.
+30. Configure `mkinitcpio` with modules needed to create the initramfs image:
         
         # For busybox-based initramfs
         vim /etc/mkinitcpio.conf
@@ -237,17 +228,16 @@ Please be aware that these names should be substituted with the actual device pa
 
         --> HOOKS=(base systemd autodetect microcode modconf kms plymouth keyboard sd-vconsole block sd-encrypt lvm2 filesystems fsck)
 
-1. Recreate the initramfs image:
+31. Recreate the initramfs image:
 
         mkinitcpio -P
 
-1.  Setup GRUB.
+32. Setup GRUB:
 
         pacman -S grub efibootmgr
         grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 
-    In `/etc/default/grub` edit the line GRUB_CMDLINE_LINUX as follows.
-    Don't forget to replace `/dev/<luks-disk>` with the appropriate path.
+    In `/etc/default/grub` edit the line GRUB_CMDLINE_LINUX as follows. Don't forget to replace `/dev/<luks-disk>` with the appropriate path:
 
         # To busybox-based initramfs
         GRUB_CMDLINE_LINUX="cryptdevice=/dev/$luks-disk$:luksLvmRoot root=/dev/vg0/root"
@@ -259,99 +249,156 @@ Please be aware that these names should be substituted with the actual device pa
 
         grub-mkconfig -o /boot/grub/grub.cfg
 
-1.  Install `networkmanager` package and enable `NetworkManager` service
-    to ensure you have Internet connectivity after rebooting.
+33. Install `networkmanager` package and enable `NetworkManager` service to ensure you have Internet connectivity after rebooting:
 
         pacman -S networkmanager
         systemctl enable NetworkManager
 
-1.  Exit new system and unmount all filesystems.
+34. Exit new system and unmount all filesystems:
 
         exit
         umount -R /mnt
         swapoff -a
 
-1.  Arch is now installed 🎉. Reboot.
+35. Arch is now installed 🎉. Reboot:
 
         reboot
 
-1.  Open BIOS settings and set `GRUB` as first boot priority.
-    Save and exit BIOS settings. After booting the system, you should see the GRUB menu.
+36. Open BIOS settings and set `GRUB` as first boot priority. Save and exit BIOS settings. After booting the system, you should see the GRUB menu.
 
-1.  Reboot again and log in to Arch linux with your username and password.
+37. Reboot again and log in to Arch Linux with your username and password.
 
-1.  Check internet connectivity.
+38. Check internet connectivity:
 
         ping google.com
 
-1.  Reboot!
+39. Reboot!
 
-# Pos installation
+## Post Installation
 
-## Create encrypted external drive
+### Create Encrypted External Drive
 
-Use cryptsetup to encrypt device
+Use cryptsetup to encrypt device:
 
         cryptsetup --use-urandom luksFormat /dev/<external-disk>
 
 **Optional, just for automation:**
-1. Create keyfile
+
+1. Create keyfile:
 
         openssl genrsa -out <path/to/key> 4096
 
-1. Add key to encrypted device
+2. Add key to encrypted device:
 
-        crypsetup luksAddKey /dev/<external-disk> <path/to/key>
+        cryptsetup luksAddKey /dev/<external-disk> <path/to/key>
 
-1. Add device to /etc/crypttab for autodecrypt it
+3. Add device to /etc/crypttab for autodecrypt it:
 
         vim /etc/crypttab
 
         --> <device-name>       UUID=<device-UUID-code>      <path/to/key>    luks,<options>
 
-        # Example dont using keyfile
+        # Example don't using keyfile
         --> BACKUP      UUID=738c6426-3ef5-48d5-a837-b437c722802f       -       luks
 
         # Example using
         --> BACKUP      UUID=73481cae-1b80-400c-bef3-4f4a2b2a9a1e       /root/backup-key        luks
 
-1. Add the external drive to /etc/fstab to automount (sometimes useless)
+4. Add the external drive to /etc/fstab to automount (sometimes useless):
 
-        # To help you with information about mounted drive (dont simply overwrite fstab)
+        # To help you with information about mounted drive (don't simply overwrite fstab)
         genfstab -U /
 
         vim /etc/fstab
 
         --> UUID=<device-UUID-code>     <path/to/mount> <type> <options>  <dump>  <fsck>
 
-        #For example
+        # For example
 
         --> UUID=8d90233f-36ff-434d-bc5a-de6d596719f1       /run/timeshift/backup   ext4            rw,relatime     0 2
 
-# Notes
+### Zram Implementation
 
-## Backup LUKS Headers
+1. Install the `zram-generator` package:
 
-It is important to make a backup of LUKS header so that you can access your data in case of emergency
-(if your LUKS header somehow gets damaged).
+        pacman -S zram-generator
+
+2. Configure zram by creating a configuration file:
+
+        vim /etc/systemd/zram-generator.conf
+
+        # Example configuration
+        [zram0]
+        zram-size = ram / 2
+        compression-algorithm = lz4
+
+3. Enable and start the zram service:
+
+        systemctl enable systemd-zram-setup@zram0.service
+        systemctl start systemd-zram-setup@zram0.service
+
+4. Verify the zram device is active:
+
+        swapon --show
+
+5. Optionally, you can add the zram configuration to `/etc/fstab` for automatic setup on boot:
+
+        echo "/dev/zram0 none swap defaults 0 0" | tee -a /etc/fstab
+
+6. Reboot the system to apply the changes:
+
+        reboot
+
+### Zswap Implementation
+
+1. Ensure the `zswap` feature is enabled in the kernel. Most modern kernels have it enabled by default. Verify by checking the kernel configuration:
+
+        zgrep CONFIG_ZSWAP /proc/config.gz
+
+2. Configure zswap by editing the GRUB configuration file:
+
+        vim /etc/default/grub
+
+    Add the following parameters to the `GRUB_CMDLINE_LINUX_DEFAULT` line:
+
+        GRUB_CMDLINE_LINUX_DEFAULT="zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=20 zswap.zpool=z3fold"
+
+3. Update the GRUB configuration to apply the changes:
+
+        grub-mkconfig -o /boot/grub/grub.cfg
+
+4. Reboot the system to enable zswap with the new configuration:
+
+        reboot
+
+5. Verify that zswap is active by checking the kernel messages:
+
+        dmesg | grep zswap
+
+### Notes
+
+#### Backup LUKS Headers
+
+It is important to make a backup of LUKS header so that you can access your data in case of emergency (if your LUKS header somehow gets damaged).
 
 Create a backup file:
 
     sudo cryptsetup luksHeaderBackup /dev/<luks-disk> --header-backup-file luks-header-backup-$(date -I)
 
-Store the backup file in a safe place, such as a USB drive.
-If something bad happens, you can restore the backup header:
+Store the backup file in a safe place, such as a USB drive. If something bad happens, you can restore the backup header:
 
     sudo cryptsetup luksHeaderRestore /dev/<luks-disk> --header-backup-file /path/to/backup_header_file
 
-# References
+## References
 
 - https://gist.github.com/mattiaslundberg/8620837
 - https://wiki.archlinux.org/index.php/Installation_guide
 - https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS
 - https://wiki.archlinux.org/title/GRUB
+- https://wiki.archlinux.org/title/Zram
+- https://wiki.archlinux.org/title/Zswap
 - https://joshrosso.com/docs/2020/2020-2-16-arch-windows-install/
 
 ---
 
-Take a look at original creator [dotfiles repo](https://github.com/mjnaderi/dotfiles).
+Take a look at the original creator's [dotfiles repo](https://github.com/mjnaderi/dotfiles).

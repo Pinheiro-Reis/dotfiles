@@ -9,7 +9,6 @@ bibata-cursor-theme-bin
 bitwarden
 blueman
 breeze
-brightnessctl
 btop
 capitaine-cursors
 copyq
@@ -20,7 +19,6 @@ dmidecode
 dnsmasq
 docker
 docker-compose
-dotnet-sdk
 easyeffects
 efibootmgr
 eza
@@ -32,7 +30,6 @@ fuse2
 fzf
 galculator
 gcc
-gedit
 gimp
 git
 gnome-clocks
@@ -57,10 +54,8 @@ linux
 linux-firmware
 linux-lts
 lsp-plugins
-lutris
 lvm2
 lxc
-lynx
 man-db
 mpv
 ncdu
@@ -135,7 +130,7 @@ rofi-wayland
 rust
 sddm
 slurp
-steam
+speedtest-cli
 stow
 sudo
 texlive-basic

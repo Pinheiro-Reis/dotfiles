@@ -13,7 +13,6 @@
     "editor.scrollbar.vertical": "hidden",
     "explorer.compactFolders": false,
     "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Min Dark",
     "workbench.externalBrowser": "firefox",
     "workbench.editor.labelFormat": "short",
     "workbench.iconTheme": "symbols",
@@ -22,4 +21,5 @@
     "window.confirmSaveUntitledWorkspace": false,
     "git.confirmSync": false,
     "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Dracula Theme",
 }
