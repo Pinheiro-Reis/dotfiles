@@ -1,13 +1,18 @@
 {
     "breadcrumbs.enabled": true,
-    "editor.fontFamily": "Fira Code",
+    "editor.colorDecorators": true,
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
     "editor.fontLigatures": false,
     "editor.fontSize": 16,
     "editor.fontVariations": false,
+    "editor.formatOnSave": true,
     "editor.lineHeight": 1.5,
     "editor.minimap.enabled": false,
     /*"editor.renderLineHighlight": "gutter",*/
-    "editor.rulers": [80, 120],
+    "editor.rulers": [
+        80,
+        120
+    ],
     "editor.semanticHighlighting.enabled": false,
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
@@ -21,5 +26,15 @@
     "window.confirmSaveUntitledWorkspace": false,
     "git.confirmSync": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Dracula Theme",
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.CustomBrowser": "firefox",
+    "explorer.confirmDelete": false,
+    "[sass]": {
+        "editor.defaultFormatter": "syler.sass-indented"
+    },
+    "explorer.confirmDragAndDrop": false,
 }
