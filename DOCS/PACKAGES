@@ -21,10 +21,12 @@ docker
 docker-compose
 easyeffects
 efibootmgr
+emacs
 eza
 fakechroot
 fastfetch
 firefox
+flac-doc
 flatpak
 fuse2
 fzf
@@ -32,6 +34,7 @@ galculator
 gcc
 gimp
 git
+git-lfs
 gnome-clocks
 grim
 grimblast-git
@@ -50,6 +53,7 @@ hyprshade
 jq
 kalzium
 kitty
+lib32-flac
 libreoffice-fresh
 libvirt
 linux
@@ -59,7 +63,9 @@ lsp-plugins
 lvm2
 lxc
 man-db
+meson
 mpv
+nautilus
 ncdu
 neovim
 network-manager-applet

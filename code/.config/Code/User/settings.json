@@ -26,7 +26,6 @@
     "window.confirmSaveUntitledWorkspace": false,
     "git.confirmSync": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "One Dark Pro Night Flat",
     "workbench.settings.applyToAllProfiles": [
         "editor.fontFamily"
     ],
@@ -37,4 +36,9 @@
         "editor.defaultFormatter": "syler.sass-indented"
     },
     "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "[latex]": {
+        "editor.formatOnPaste": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix"
+    },
 }
