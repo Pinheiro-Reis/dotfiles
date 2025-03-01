@@ -17,6 +17,24 @@
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.latexindent.path": "latexindent",
+    "latex-workshop.formatting.latexindent.args": [
+        "-c",
+        "%DIR%/",
+        "%TMPFILE%",
+        "-y=defaultIndent: '%INDENT%'"
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.CustomBrowser": "firefox",
+    "[sass]": {
+        "editor.defaultFormatter": "syler.sass-indented"
+    },
+    "terminal.integrated.defaultProfile.linux": "tmux",
     "workbench.activityBar.location": "hidden",
     "workbench.externalBrowser": "firefox",
     "workbench.editor.labelFormat": "short",
@@ -24,21 +42,9 @@
     "workbench.startupEditor": "newUntitledFile",
     "window.menuBarVisibility": "toggle",
     "window.confirmSaveUntitledWorkspace": false,
-    "git.confirmSync": false,
-    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.editor.editorActionsLocation": "hidden",
     "workbench.settings.applyToAllProfiles": [
         "editor.fontFamily"
     ],
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.CustomBrowser": "firefox",
-    "explorer.confirmDelete": false,
-    "[sass]": {
-        "editor.defaultFormatter": "syler.sass-indented"
-    },
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "[latex]": {
-        "editor.formatOnPaste": false,
-        "editor.suggestSelection": "recentlyUsedByPrefix"
-    },
 }

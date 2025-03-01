@@ -6,6 +6,7 @@ base
 base-devel
 bat
 bibata-cursor-theme-bin
+biber
 bitwarden
 blueman
 breeze
@@ -21,7 +22,6 @@ docker
 docker-compose
 easyeffects
 efibootmgr
-emacs
 eza
 fakechroot
 fastfetch
@@ -34,7 +34,6 @@ galculator
 gcc
 gimp
 git
-git-lfs
 gnome-clocks
 grim
 grimblast-git
@@ -80,6 +79,8 @@ openssh
 otf-font-awesome
 papirus-icon-theme
 pavucontrol
+perl-file-homedir
+perl-yaml-tiny
 php
 php-apache
 pipewire-alsa
@@ -174,6 +175,7 @@ ttf-fira-sans
 ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
 ttf-ms-fonts
+ttf-wps-fonts
 tumbler
 ufw
 unzip
