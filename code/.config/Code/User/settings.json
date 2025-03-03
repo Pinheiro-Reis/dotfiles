@@ -35,16 +35,17 @@
         "editor.defaultFormatter": "syler.sass-indented"
     },
     "terminal.integrated.defaultProfile.linux": "tmux",
-    "workbench.activityBar.location": "hidden",
     "workbench.externalBrowser": "firefox",
     "workbench.editor.labelFormat": "short",
     "workbench.iconTheme": "symbols",
     "workbench.startupEditor": "newUntitledFile",
-    "window.menuBarVisibility": "toggle",
     "window.confirmSaveUntitledWorkspace": false,
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.settings.applyToAllProfiles": [
         "editor.fontFamily"
     ],
+    "window.menuBarVisibility": "compact",
+    "workbench.activityBar.location": "hidden",
+    "debug.onTaskErrors": "debugAnyway",
 }
