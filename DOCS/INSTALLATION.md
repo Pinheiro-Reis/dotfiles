@@ -243,7 +243,7 @@ Please be aware that these names should be substituted with the actual device pa
         GRUB_CMDLINE_LINUX="cryptdevice=/dev/$luks-disk$:luksLvmRoot root=/dev/vg0/root"
 
         # To systemd-based initramfs
-        GRUB_CMDLINE_LINUX="rd.luks.name=$luks-disk-UUID-code$=luksLvmRoot root=/dev/vg0/root"
+        GRUB_CMDLINE_LINUX="rd.luks.name=$luks-disk-UUID-code$=luksLvmRoot rd.luks.options=timeout=0 rootflags=x-systemd.device-timeout=0 root=/dev/vg0/root"
 
     Now generate the main GRUB configuration file:
 

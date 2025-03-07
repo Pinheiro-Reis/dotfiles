@@ -1,3 +1,4 @@
+amdvlk
 apache
 apparmor
 apple_cursor
@@ -74,6 +75,7 @@ nm-connection-editor
 nmap
 nwg-dock-hyprland
 nwg-look
+obsidian
 oh-my-posh
 okular
 openssh
@@ -186,6 +188,8 @@ virt-install
 virt-manager
 virt-viewer
 visual-studio-code-bin
+vulkan-radeon
+vulkan-tools
 waybar
 waypaper
 wev
@@ -231,6 +235,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xournalpp
 yay
 yay-debug
 yt-dlp

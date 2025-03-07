@@ -41,11 +41,13 @@
     "workbench.startupEditor": "newUntitledFile",
     "window.confirmSaveUntitledWorkspace": false,
     "workbench.colorTheme": "Gruvbox Dark Hard",
-    "workbench.editor.editorActionsLocation": "hidden",
     "workbench.settings.applyToAllProfiles": [
         "editor.fontFamily"
     ],
     "window.menuBarVisibility": "compact",
     "workbench.activityBar.location": "hidden",
     "debug.onTaskErrors": "debugAnyway",
+    "git.defaultBranchName": "master",
+    "git.terminalAuthentication": false,
+    "github.gitAuthentication": false,
 }
