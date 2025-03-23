@@ -40,7 +40,7 @@
     "workbench.iconTheme": "symbols",
     "workbench.startupEditor": "newUntitledFile",
     "window.confirmSaveUntitledWorkspace": false,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Dracula Theme",
     "workbench.settings.applyToAllProfiles": [
         "editor.fontFamily"
     ],
@@ -50,4 +50,10 @@
     "git.defaultBranchName": "master",
     "git.terminalAuthentication": false,
     "github.gitAuthentication": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
 }

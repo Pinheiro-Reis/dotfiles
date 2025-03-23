@@ -55,6 +55,7 @@ jq
 kalzium
 kitty
 lib32-flac
+libappimage
 libreoffice-fresh
 libvirt
 linux
@@ -173,6 +174,7 @@ thunderbird
 timeshift
 tmux
 torbrowser-launcher
+trash-cli
 ttf-fira-code
 ttf-fira-sans
 ttf-firacode-nerd
