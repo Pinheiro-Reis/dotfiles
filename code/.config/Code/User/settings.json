@@ -67,5 +67,6 @@
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
 	"window.menuBarVisibility": "compact",
 	"workbench.activityBar.location": "hidden",
-	"debug.onTaskErrors": "debugAnyway"
+	"debug.onTaskErrors": "debugAnyway",
+	"prettier.tabWidth": 4
 }
