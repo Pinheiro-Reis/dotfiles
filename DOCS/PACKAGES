@@ -21,6 +21,7 @@ dmidecode
 dnsmasq
 docker
 docker-compose
+dotnet-sdk
 easyeffects
 efibootmgr
 eza
@@ -81,6 +82,7 @@ oh-my-posh
 okular
 openssh
 otf-font-awesome
+pacman-contrib
 papirus-icon-theme
 pavucontrol
 perl-file-homedir
