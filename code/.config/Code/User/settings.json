@@ -68,5 +68,8 @@
 	"window.menuBarVisibility": "compact",
 	"workbench.activityBar.location": "hidden",
 	"debug.onTaskErrors": "debugAnyway",
-	"prettier.tabWidth": 4
+	"prettier.tabWidth": 4,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter"
+	}
 }
