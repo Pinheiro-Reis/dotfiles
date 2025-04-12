@@ -1,5 +1,6 @@
 {
 	"breadcrumbs.enabled": true,
+	"debug.onTaskErrors": "debugAnyway",
 	"editor.colorDecorators": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.detectIndentation": false,
@@ -57,7 +58,7 @@
 	"notebook.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.useTabs": true,
 	"prettier.requireConfig": false,
-	"terminal.integrated.defaultProfile.linux": "tmux",
+	"prettier.tabWidth": 4,
 	"workbench.externalBrowser": "firefox",
 	"workbench.editor.labelFormat": "short",
 	"workbench.iconTheme": "symbols",
@@ -67,9 +68,11 @@
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
 	"window.menuBarVisibility": "compact",
 	"workbench.activityBar.location": "hidden",
-	"debug.onTaskErrors": "debugAnyway",
-	"prettier.tabWidth": 4,
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter"
-	}
+	},
+	"[java]": {
+		"editor.defaultFormatter": "Oracle.oracle-java"
+	},
+	"terminal.integrated.defaultProfile.linux": "bash"
 }

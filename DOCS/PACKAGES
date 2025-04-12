@@ -35,9 +35,11 @@ fzf
 galculator
 gcc
 gdb
+ghostty
 gimp
 git
 gnome-clocks
+gradle
 grim
 grimblast-git
 grub
@@ -80,6 +82,8 @@ nwg-look
 obsidian
 oh-my-posh
 okular
+openjdk21-doc
+openjdk21-src
 openssh
 otf-font-awesome
 pacman-contrib
