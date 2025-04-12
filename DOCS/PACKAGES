@@ -1,3 +1,4 @@
+alacritty
 amdvlk
 apache
 apparmor
@@ -35,7 +36,6 @@ fzf
 galculator
 gcc
 gdb
-ghostty
 gimp
 git
 gnome-clocks
