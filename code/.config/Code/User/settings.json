@@ -74,5 +74,5 @@
 	"[java]": {
 		"editor.defaultFormatter": "Oracle.oracle-java"
 	},
-	"terminal.integrated.defaultProfile.linux": "bash"
+	"terminal.integrated.defaultProfile.linux": "zsh"
 }
