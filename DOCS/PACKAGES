@@ -14,6 +14,7 @@ blueman
 breeze
 btop
 capitaine-cursors
+chromium
 copyq
 devtools
 dex
@@ -28,7 +29,6 @@ efibootmgr
 eza
 fakechroot
 fastfetch
-firefox
 flac-doc
 flatpak
 fuse2
@@ -67,6 +67,7 @@ lsp-plugins
 lvm2
 lxc
 man-db
+mariadb
 meson
 mpv
 nautilus
@@ -92,6 +93,7 @@ perl-file-homedir
 perl-yaml-tiny
 php
 php-apache
+picom
 pipewire-alsa
 pipewire-pulse
 plocate
@@ -175,7 +177,6 @@ texlive-pstricks
 texlive-publishers
 texlive-xetex
 thunar
-thunderbird
 timeshift
 tmux
 torbrowser-launcher
@@ -202,6 +203,7 @@ waypaper
 wev
 wget
 wine
+xcompmgr
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xf86-video-vesa
@@ -244,7 +246,6 @@ xorg-xwininfo
 xorg-xwud
 xournalpp
 yay
-yay-debug
 yt-dlp
 zathura
 zathura-pdf-mupdf
