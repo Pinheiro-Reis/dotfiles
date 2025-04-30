@@ -81,12 +81,12 @@ nwg-dock-hyprland
 nwg-look
 obsidian
 oh-my-posh
-okular
 openjdk21-doc
 openjdk21-src
 openssh
 otf-font-awesome
 pacman-contrib
+papers
 papirus-icon-theme
 pavucontrol
 perl-file-homedir
@@ -198,6 +198,7 @@ virt-install
 virt-manager
 virt-viewer
 visual-studio-code-bin
+vlc
 vulkan-radeon
 vulkan-tools
 waybar
