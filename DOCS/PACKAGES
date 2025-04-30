@@ -99,6 +99,7 @@ pipewire-pulse
 plocate
 plymouth
 polkit-gnome
+postgresql
 python-ipykernel
 python-notify2
 python-pip
@@ -151,6 +152,7 @@ rust
 sddm
 slurp
 speedtest-cli
+steam
 stow
 sudo
 texlive-basic
@@ -244,7 +246,6 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xournalpp
 yay
 yt-dlp
 zathura
