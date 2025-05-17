@@ -64,7 +64,7 @@
 	"workbench.iconTheme": "symbols",
 	"workbench.startupEditor": "newUntitledFile",
 	"window.confirmSaveUntitledWorkspace": false,
-	"workbench.colorTheme": "Gruvbox Dark Hard",
+	"workbench.colorTheme": "Catppuccin Mocha",
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
 	"window.menuBarVisibility": "compact",
 	"workbench.activityBar.location": "hidden",
