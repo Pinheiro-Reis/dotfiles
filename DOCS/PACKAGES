@@ -98,6 +98,7 @@ pipewire-alsa
 pipewire-pulse
 plocate
 plymouth
+pnpm
 polkit-gnome
 postgresql
 python-ipykernel
@@ -181,7 +182,6 @@ texlive-xetex
 thunar
 timeshift
 tmux
-torbrowser-launcher
 trash-cli
 ttf-fira-code
 ttf-fira-sans
