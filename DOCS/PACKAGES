@@ -15,6 +15,7 @@ btop
 capitaine-cursors
 chromium
 copyq
+cowsay
 devtools
 dex
 dhcpcd
@@ -66,6 +67,7 @@ lsp-plugins
 lvm2
 lxc
 man-db
+mangohud
 mariadb
 meson
 mpv

@@ -1,2 +1,7 @@
 [general]
 import=["~/.cache/wal/colors-alacritty.toml"]
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
