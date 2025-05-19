@@ -64,6 +64,7 @@ linux
 linux-firmware
 linux-lts
 lsp-plugins
+lutris
 lvm2
 lxc
 man-db
@@ -207,6 +208,7 @@ waypaper
 wev
 wget
 wine
+winetricks
 xcompmgr
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
