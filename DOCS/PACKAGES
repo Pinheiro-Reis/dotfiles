@@ -14,6 +14,7 @@ breeze
 btop
 capitaine-cursors
 chromium
+clamav
 copyq
 cowsay
 devtools
@@ -110,6 +111,7 @@ python-pipx
 python-psutil
 python-pywal
 python-screeninfo
+qbittorrent
 qemu-full
 qjackctl
 qrencode
@@ -184,6 +186,7 @@ texlive-xetex
 thunar
 timeshift
 tmux
+torbrowser-launcher
 trash-cli
 ttf-fira-code
 ttf-fira-sans
