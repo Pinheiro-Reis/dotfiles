@@ -1,4 +1,4 @@
 [window]
-opacity = 0.2
+opacity = 1
 decorations = 'None'
-padding = { x = 15, y = 15 }
+padding = { x = 25, y = 25 }

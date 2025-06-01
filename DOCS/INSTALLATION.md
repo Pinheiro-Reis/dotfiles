@@ -1,16 +1,17 @@
 # (In Process) Installing Arch Linux with Full Disk, External Backup, Zram Encryption, GRUB, LVM, Systemd, and Busybox-based Initramfs
 
 ## Includes Guides To:
-* **LUKS encryption** (included)
-* **ext4 filesystem** (included)
-* **btrfs filesystem** (included)
-* **LVM under LUKS** (included)
-* **UEFI mode** (included)
-* **Busybox-based initramfs** (included)
-* **Systemd-based initramfs** (included)
-* **Decrypt both devices at the same time** (included)
-* **Zram implementation** (included)
-* **Zswap implementation** (included)
+
+-   **LUKS encryption** (included)
+-   **ext4 filesystem** (included)
+-   **btrfs filesystem** (included)
+-   **LVM under LUKS** (included)
+-   **UEFI mode** (included)
+-   **Busybox-based initramfs** (included)
+-   **Systemd-based initramfs** (included)
+-   **Decrypt both devices at the same time** (included)
+-   **Zram implementation** (included)
+-   **Zswap implementation** (included)
 
 If you're only interested in installing Linux and not setting up dual boot with Windows, feel free to skip the Windows-related sections.
 
@@ -18,62 +19,62 @@ If you're only interested in installing Linux and not setting up dual boot with 
 
 Before we dive into the installation process, let's ensure that your system is ready:
 
-- **Data Backup:** Make sure you've backed up all your important data. We're about to make significant changes, and it's always wise to have a safety net.
-- **UEFI Mode:** In your system's BIOS settings, set the boot mode to UEFI.
+-   **Data Backup:** Make sure you've backed up all your important data. We're about to make significant changes, and it's always wise to have a safety net.
+-   **UEFI Mode:** In your system's BIOS settings, set the boot mode to UEFI.
 
 ## Prepare the USB Drive
 
-- **Ventoy Installation:** Start by installing [Ventoy](https://github.com/ventoy/Ventoy) on your USB drive. Ventoy is a versatile tool that allows you to easily create a multi-boot USB drive.
-- **Download Arch ISO:** Head to [Arch Linux's official website](https://www.archlinux.org/download/) and download the Arch ISO image. Copy it to your USB drive.
+-   **Ventoy Installation:** Start by installing [Ventoy](https://github.com/ventoy/Ventoy) on your USB drive. Ventoy is a versatile tool that allows you to easily create a multi-boot USB drive.
+-   **Download Arch ISO:** Head to [Arch Linux's official website](https://www.archlinux.org/download/) and download the Arch ISO image. Copy it to your USB drive.
 
 ## Disk Partition Structure
 
 Here is an example to give you a clear picture of what the final disk partition structure will look like. If you're not interested in installing Windows, you can simply ignore the green parts.
 
 | CRYPTLV 1            | CRYPTLV 2            | CRYPTLV 3            | Boot Partition | EFI Partition |
-|----------------------|----------------------|----------------------|----------------|---------------|
+| -------------------- | -------------------- | -------------------- | -------------- | ------------- |
 | /                    | [SWAP]               | /home                | /boot          | /efi          |
 | /dev/mapper/vg0-root | /dev/mapper/vg0-swap | /dev/mapper/vg0-home | /dev/sda2      | /dev/sda1     |
 
 Please be aware that these names should be substituted with the actual device paths relevant to your system configuration:
 
-| Device         | In this Doc          | Examples                      |
-|----------------|----------------------|-------------------------------|
-| Disk Device    | `/dev/<your-disk>`   | `/dev/sda`,  `/dev/nvme0n1`   |
-| EFI Partition  | `/dev/<efi-disk>`    | `/dev/sda5`, `/dev/nvme0n1p1` |
-| Boot Partition | `/dev/<boot-disk>`   | `/dev/sda6`, `/dev/nvme0n1p2` |
-| LUKS Partition | `/dev/<luks-disk>`   | `/dev/sda7`, `/dev/nvme0n1p3` |
+| Device         | In this Doc        | Examples                      |
+| -------------- | ------------------ | ----------------------------- |
+| Disk Device    | `/dev/<your-disk>` | `/dev/sda`, `/dev/nvme0n1`    |
+| EFI Partition  | `/dev/<efi-disk>`  | `/dev/sda5`, `/dev/nvme0n1p1` |
+| Boot Partition | `/dev/<boot-disk>` | `/dev/sda6`, `/dev/nvme0n1p2` |
+| LUKS Partition | `/dev/<luks-disk>` | `/dev/sda7`, `/dev/nvme0n1p3` |
 
 ## Install Arch Linux
 
-1. Connect the USB drive and boot from the Arch Linux ISO.
-2. Set your keyboard layout:
+1.  Connect the USB drive and boot from the Arch Linux ISO.
+2.  Set your keyboard layout:
 
         loadkeys <keyboard-layout>
 
-3. Set pacman configs, where "number" could be what you want, but not too high:
+3.  Set pacman configs, where "number" could be what you want, but not too high:
 
         vim /etc/pacman.conf
 
         # Uncomment and modify
         ParallelDownloads = <number>
 
-4. Make sure the system is booted in UEFI mode. The following command should display the directory contents without error:
+4.  Make sure the system is booted in UEFI mode. The following command should display the directory contents without error:
 
         ls /sys/firmware/efi/efivars
 
-5. Connect to the internet. A wired connection is preferred since it's easier to connect. [More info](https://wiki.archlinux.org/index.php/Installation_guide#Connect_to_the_internet)
+5.  Connect to the internet. A wired connection is preferred since it's easier to connect. [More info](https://wiki.archlinux.org/index.php/Installation_guide#Connect_to_the_internet)
 
-6. Run `fdisk` and follow until step 11 to create Linux partitions:
+6.  Run `fdisk` and follow until step 11 to create Linux partitions:
 
         fdisk /dev/<your-disk>
 
-7. Create an empty GPT partition table using the `g` command. (**WARNING:** This will erase the entire disk.)
+7.  Create an empty GPT partition table using the `g` command. (**WARNING:** This will erase the entire disk.)
 
         Command (m for help): g
         Created a new GPT disklabel (GUID: ...).
 
-8. Create the EFI partition (`/dev/<efi-disk>`):
+8.  Create the EFI partition (`/dev/<efi-disk>`):
 
         Command (m for help): n
         Partition number: <Press Enter>
@@ -83,7 +84,7 @@ Please be aware that these names should be substituted with the actual device pa
         Command (m for help): t
         Partition type or alias (type L to list all): uefi
 
-9. Create the Boot partition (`/dev/<boot-disk>`):
+9.  Create the Boot partition (`/dev/<boot-disk>`):
 
         Command (m for help): n
         Partition number: <Press Enter>
@@ -181,7 +182,7 @@ Please be aware that these names should be substituted with the actual device pa
 
         # See available timezones:
         ls /usr/share/zoneinfo/
-       
+
         # Set timezone (you may should use other):
         ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 
@@ -217,7 +218,7 @@ Please be aware that these names should be substituted with the actual device pa
         pacman -S lvm2 plymouth
 
 30. Configure `mkinitcpio` with modules needed to create the initramfs image:
-        
+
         # For busybox-based initramfs
         vim /etc/mkinitcpio.conf
 
@@ -278,21 +279,39 @@ Please be aware that these names should be substituted with the actual device pa
 
 ### Create Encrypted External Drive
 
-Use cryptsetup to encrypt device:
+1.  Create the partition:
 
-        cryptsetup --use-urandom luksFormat /dev/<external-disk>
+        Command (m for help): n
+        Partition number: <Press Enter>
+        First sector: <Press Enter>
+        Last sector, +/-sectors or +/-size{K,M,G,T,P}: <Press Enter>
+
+        Command (m for help): t
+        Partition type or alias (type L to list all): linux
+
+2.  Use cryptsetup to encrypt device:
+
+        cryptsetup --use-urandom luksFormat /dev/<backup-disk-partition>
+
+3.  Open:
+
+        cryptsetup open /dev/<backup-disk-partition> <YourBackupName>
+
+4.  Make the filesystem:
+
+        mkfs.ext4 /dev/mapper/<YourBackupName>
 
 **Optional, just for automation:**
 
-1. Create keyfile:
+1.  Create keyfile:
 
         openssl genrsa -out <path/to/key> 4096
 
-2. Add key to encrypted device:
+2.  Add key to encrypted device:
 
         cryptsetup luksAddKey /dev/<external-disk> <path/to/key>
 
-3. Add device to /etc/crypttab for autodecrypt it:
+3.  Add device to /etc/crypttab for autodecrypt it:
 
         vim /etc/crypttab
 
@@ -304,7 +323,7 @@ Use cryptsetup to encrypt device:
         # Example using
         --> BACKUP      UUID=73481cae-1b80-400c-bef3-4f4a2b2a9a1e       /root/backup-key        luks
 
-4. Add the external drive to /etc/fstab to automount (sometimes useless):
+4.  Add the external drive to /etc/fstab to automount (sometimes useless):
 
         # To help you with information about mounted drive (don't simply overwrite fstab)
         genfstab -U /
@@ -319,11 +338,11 @@ Use cryptsetup to encrypt device:
 
 ### Zram Implementation
 
-1. Install the `zram-generator` package:
+1.  Install the `zram-generator` package:
 
         pacman -S zram-generator
 
-2. Configure zram by creating a configuration file:
+2.  Configure zram by creating a configuration file:
 
         vim /etc/systemd/zram-generator.conf
 
@@ -332,30 +351,30 @@ Use cryptsetup to encrypt device:
         zram-size = ram / 2
         compression-algorithm = lz4
 
-3. Enable and start the zram service:
+3.  Enable and start the zram service:
 
         systemctl enable systemd-zram-setup@zram0.service
         systemctl start systemd-zram-setup@zram0.service
 
-4. Verify the zram device is active:
+4.  Verify the zram device is active:
 
         swapon --show
 
-5. Optionally, you can add the zram configuration to `/etc/fstab` for automatic setup on boot:
+5.  Optionally, you can add the zram configuration to `/etc/fstab` for automatic setup on boot:
 
         echo "/dev/zram0 none swap defaults 0 0" | tee -a /etc/fstab
 
-6. Reboot the system to apply the changes:
+6.  Reboot the system to apply the changes:
 
         reboot
 
 ### Zswap Implementation
 
-1. Ensure the `zswap` feature is enabled in the kernel. Most modern kernels have it enabled by default. Verify by checking the kernel configuration:
+1.  Ensure the `zswap` feature is enabled in the kernel. Most modern kernels have it enabled by default. Verify by checking the kernel configuration:
 
         zgrep CONFIG_ZSWAP /proc/config.gz
 
-2. Configure zswap by editing the GRUB configuration file:
+2.  Configure zswap by editing the GRUB configuration file:
 
         vim /etc/default/grub
 
@@ -363,15 +382,15 @@ Use cryptsetup to encrypt device:
 
         GRUB_CMDLINE_LINUX_DEFAULT="zswap.enabled=1 zswap.compressor=lz4 zswap.max_pool_percent=20 zswap.zpool=z3fold"
 
-3. Update the GRUB configuration to apply the changes:
+3.  Update the GRUB configuration to apply the changes:
 
         grub-mkconfig -o /boot/grub/grub.cfg
 
-4. Reboot the system to enable zswap with the new configuration:
+4.  Reboot the system to enable zswap with the new configuration:
 
         reboot
 
-5. Verify that zswap is active by checking the kernel messages:
+5.  Verify that zswap is active by checking the kernel messages:
 
         dmesg | grep zswap
 
@@ -391,13 +410,13 @@ Store the backup file in a safe place, such as a USB drive. If something bad hap
 
 ## References
 
-- https://gist.github.com/mattiaslundberg/8620837
-- https://wiki.archlinux.org/index.php/Installation_guide
-- https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS
-- https://wiki.archlinux.org/title/GRUB
-- https://wiki.archlinux.org/title/Zram
-- https://wiki.archlinux.org/title/Zswap
-- https://joshrosso.com/docs/2020/2020-2-16-arch-windows-install/
+-   https://gist.github.com/mattiaslundberg/8620837
+-   https://wiki.archlinux.org/index.php/Installation_guide
+-   https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS
+-   https://wiki.archlinux.org/title/GRUB
+-   https://wiki.archlinux.org/title/Zram
+-   https://wiki.archlinux.org/title/Zswap
+-   https://joshrosso.com/docs/2020/2020-2-16-arch-windows-install/
 
 ---
 

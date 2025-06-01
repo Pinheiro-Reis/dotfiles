@@ -40,7 +40,6 @@ gdb
 gimp
 git
 gnome-clocks
-gradle
 grim
 grimblast-git
 grub
@@ -55,6 +54,7 @@ hyprlock
 hyprpaper
 hyprpicker
 hyprshade
+jdk21-openjdk
 jq
 kalzium
 lib32-flac
@@ -84,8 +84,6 @@ nwg-dock-hyprland
 nwg-look
 obsidian
 oh-my-posh
-openjdk21-doc
-openjdk21-src
 openssh
 otf-font-awesome
 pacman-contrib
@@ -196,6 +194,7 @@ ttf-ms-fonts
 ttf-wps-fonts
 tumbler
 ufw
+unrar
 unzip
 vim
 virt-firmware
