@@ -3,12 +3,12 @@ version = 3
 final_space = true
 
 [secondary_prompt]
-  template = '❯❯ '
+  template = '❯❯ sdafsdfasd'
   foreground = 'magenta'
   background = 'transparent'
 
 [transient_prompt]
-  template = '❯ '
+  template = '❯ bla  bal ba '
   background = 'transparent'
   foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}magenta{{end}}']
 
