@@ -83,7 +83,6 @@ nmap
 nwg-dock-hyprland
 nwg-look
 obsidian
-oh-my-posh
 openssh
 otf-font-awesome
 pacman-contrib
@@ -183,7 +182,6 @@ texlive-publishers
 texlive-xetex
 thunar
 timeshift
-tmux
 torbrowser-launcher
 trash-cli
 ttf-fira-code

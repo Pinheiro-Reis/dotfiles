@@ -5,5 +5,5 @@
 # -----------------------------------------------------
 # Exports
 # -----------------------------------------------------
-export EDITOR=nvim
+export EDITOR=vim
 export PATH="/usr/lib/ccache/bin/:$PATH"

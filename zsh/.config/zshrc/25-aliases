@@ -15,6 +15,7 @@ alias t="trash-put"
 alias tmux="tmux -2"
 alias okular="org.kde.okular"
 alias msdl="yt-dlp -f ba -x --audio-format flac --audio-quality 0"
+alias v="vim"
 
 # -----------------------------------------------------
 # ML4W Apps
