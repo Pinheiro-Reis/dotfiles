@@ -1,6 +1,6 @@
 [general]
 # import=["~/.cache/wal/colors-alacritty.toml"]
-import=["~/.config/alacritty/themes/github_dark.toml"]
+import=["~/dotfiles/alacritty/.config/alacritty/themes/catppuccin.toml"]
 
 [colors.primary]
 background = "#000000"
