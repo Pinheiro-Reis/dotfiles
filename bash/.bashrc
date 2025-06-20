@@ -35,3 +35,5 @@ done
 if [ -f ~/.bashrc_custom ] ;then
     source ~/.bashrc_custom
 fi
+
+PATH=~/.console-ninja/.bin:$PATH
