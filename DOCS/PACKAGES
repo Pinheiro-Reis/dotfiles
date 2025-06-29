@@ -78,15 +78,16 @@ ncdu
 neovim
 network-manager-applet
 networkmanager
+nginx
 nm-connection-editor
 nmap
+nushell
 nwg-dock-hyprland
 nwg-look
 obsidian
 openssh
 otf-font-awesome
 pacman-contrib
-papers
 papirus-icon-theme
 pavucontrol
 perl-file-homedir
@@ -187,6 +188,7 @@ trash-cli
 ttf-fira-code
 ttf-fira-sans
 ttf-firacode-nerd
+ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-ms-fonts
 ttf-wps-fonts
@@ -251,6 +253,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xreader
 yay
 yt-dlp
 zathura

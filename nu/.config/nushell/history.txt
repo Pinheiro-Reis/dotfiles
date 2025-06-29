@@ -1,0 +1,311 @@
+clear
+http
+l
+which l
+which ls
+l
+ls -alh
+ls -a
+ls -al
+ls -alh
+l
+clear
+l
+ls
+ls -a
+ls -l
+ls -al
+ls -a
+l
+ls
+bash -c "ls"
+bash -c "ls -alh"
+cd dotfiles/
+l
+cd 
+l
+cd dotfiles/
+l
+stow *
+rm ~/HEAD ~/COMMIT_EDITMSG ~/branches ~/description ~/FETCH_HEAD
+l
+cd ..
+ls
+list
+l
+stow --help
+stow -D .git
+cd dotfiles/
+stow -D .git
+ls ~
+cd ..
+ls
+ls /
+l
+l /
+use nupm/nupm<\n>nupm install nupm --force --path<\n>
+use nupm<\n>nupm install nupm --force --path
+sudo pacman -Ss nupm
+cd dotfiles/nu/.config/nushell/modules/
+git clone https://github.com/nushell/nupm.git
+use nupm/nupm<\n>nupm install nupm --force --path<\n>
+nupm
+nupm install 
+clear
+nu-complete
+nu-complete git branches
+cd dotfiles/
+git branch
+unpm awesome-nu
+nupm awesome-nu
+use nupm/nupm
+cd
+cd dotfiles/nu
+nupm
+nupm install 
+use nupm nupm install 
+use nupmnupm install 
+\
+/
+l
+cd
+clear
+cd dotfiles/
+stow *
+nupm
+cd dotfiles/
+ls
+cd nu/
+cd .config/nushell/
+ls
+cd modules/
+git clone https://github.com/nushell/awesome-nu.git
+use nupm/nupm<\n>nupm install nupm --force --path<\n>
+l .config/nushell
+cd dotfiles/
+rm -rf ~/.config/nushell/; stow *
+nupm
+use nupm/nupm<\n>nupm install nupm --force --path<\n>
+l
+ls
+cd nu/.config/nushell/
+ls
+cd modules/
+nupm install nupm/
+use nupm/nupm<\n>nupm install nupm --force --path
+nupm
+cd ..
+nupm
+which nupm
+cd dotfiles/
+nupm
+cd nu/
+nupm
+cd .config/
+nupm
+cd nushell/
+nupm
+cd awesome-nu/
+l
+ls
+l
+cd dotfiles/
+l
+type
+code .stow-local-ignore
+stow -D .git
+stow *
+l
+ls
+l
+ls
+l
+ls
+l
+stow *
+l
+cat .stow-local-ignore
+stow --help
+stow --dotfiles *
+rm .stow-local-ignore
+l
+stow --dotfiles *
+l ~
+stow -D .git
+l ~
+stow --dotfiles *
+l ~
+stow -D .git
+stow --help
+l
+touch .stow-local-ignore
+l
+stow *
+l ~
+lt
+ls
+lt
+l
+cd dotfiles/
+stow nu
+l
+ll
+ls
+lt
+l
+ls --tree
+l
+eza --tree
+ls --hel
+ls --help
+tree
+tee
+ls --help
+lt
+lt dotfiles/
+ls
+lf
+lf .local/bin/protontricks-desktop-install
+l
+eza
+eza -alh
+lt dotfiles/
+lt GitHub/
+clear
+ls -l
+ll
+cd dotfiles/
+ll
+l ~
+cd dotfiles
+l
+l ~
+l ~ | get .stow-local-ignore
+cd ..
+cd
+cat .stow-local-ignore
+l
+cd dotfiles/
+l
+stow nu
+stow git
+stow .git
+l ~
+stow -D .git
+stow *
+l ~
+stow --help
+stow .stow-local-ignore
+l
+rm .stow-local-ignore
+cd ..
+code .stow-global-ignore
+cd dotfiles/
+stow *
+l ~
+stow -D .git
+ls
+l *
+cd .git/
+l
+code .stow-local-ignore
+cd ..
+stow *
+l ~
+l
+git status
+git add --all
+l
+cd nu/.config/nushell/awesome-nu/
+l
+cd ..
+l
+cd modules/
+cd completions/
+l
+cd ..
+cd nupm/
+l
+rm -rf .git .gitattributes .github/ 
+cd ..
+l
+rm -rf modules/
+l
+mkdir modules 
+mv awesome-nu/ modules/
+l
+nupm
+cd modules/
+l
+nupm install awesome-nu/
+code ../../nushell/config.nu
+nupm
+~/.config/nushell/nupm.nu
+exec
+exec ~/.config/nushell/nupm.nu
+nupm
+cd dotfiles/
+ls
+cd nu/
+cd .config/nushell/
+l
+cd modules
+nupm install awesome-nu/
+ls
+ps
+l
+l get go
+k
+l | get go
+l | get .go
+l | get Name
+l 
+l | get name
+l | get name | flattern
+l | get name | flatten
+l | get name 
+l
+l | get name | first 5
+l | first 5
+l | last 5
+l | last
+l | get 2
+l | get 0
+l | get modified
+l | get name modified
+l | get name, modified
+l | get name modified
+l | get name | get modified
+l | get name 
+l | get name ; modified 
+l | get name | where # = 0
+l | get name | where # > 0
+l | get name | where size > 0
+l | where size > 0
+l | where size > 0kb
+l | where name = go
+l | where name == go
+l | where name |= go
+l | where name != go
+dir | where name != go
+ls | where name != go
+ls --short-names  | where name != go
+ls  | where name != go | > test.tx
+ls  | where name != go > text.txt
+l
+ls | get name
+ls | where type == dir | get name
+cd dotfiles/
+cd nu/.config/nushell/
+l
+git clone https://github.com/nushell/nu_scripts.git scripts
+man git add
+cd dotfiles/
+git add --all
+cd nu/
+cd .config/nushell/
+cd scripts/
+ls
+l
+rm -rf .git*
+cd ..

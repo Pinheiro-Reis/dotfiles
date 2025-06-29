@@ -30,7 +30,9 @@
 		".env": ".env*, .venv*, env*, venv*"
 	},
 	"emmet.includeLanguages": { "django-html": "html" },
-	"files.associations": { "**/templates/*.html": "django-html" },
+	"files.associations": {
+		"**/templates/*.html": "django-html"
+	},
 	"git.confirmSync": false,
 	"git.defaultBranchName": "master",
 	"git.terminalAuthentication": false,
@@ -96,5 +98,6 @@
 		"editor.defaultFormatter": "Oracle.oracle-java"
 	},
 	"window.commandCenter": false,
-	"terminal.integrated.env.linux": {}
+	"terminal.integrated.env.linux": {},
+	"database-client.autoSync": true
 }
