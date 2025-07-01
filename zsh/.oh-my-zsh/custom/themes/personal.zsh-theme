@@ -1,1 +1,1 @@
-PROMPT="[ %{$fg[yellow]%}%~%{$reset_color%} ] -> "
+PROMPT="[ %{$fg[blue]%}%~%{$reset_color%} ] -> "
