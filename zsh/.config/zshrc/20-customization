@@ -17,9 +17,8 @@ plugins=(
     web-search
     archlinux
     zsh-autosuggestions
-    zsh-syntax-highlighting
-    fast-syntax-highlighting
-    copyfile
+    # zsh-syntax-highlighting
+    # fast-syntax-highlighting
     copybuffer
     dirhistory
 )

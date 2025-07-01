@@ -309,3 +309,313 @@ ls
 l
 rm -rf .git*
 cd ..
+git add --all
+git commit -m "Add Nushell configs"
+cd dotfiles/
+git status
+cd Obsidian-Vaults/
+l
+rm -rf Idioms/ `Religião e Filosofia/` Tecnologia/ 
+ç
+l
+git reset --hard HEAD
+l
+lt
+l
+lt `Religião e Filosofia/`
+cd `Religião e Filosofia/`
+l
+cd ..
+l
+cd Idioms/
+l
+mv Books/ `../Religião e Filosofia/`
+lt `Documents/Inf/Psyc/David Goggins/`
+clear
+vim
+open
+man
+man nu
+hel
+help
+nvim
+open Pictures/Screenshots/screenshot_2025-02-08_12-17-09.png
+cd 
+cd GitHub/
+cd JoaoVictor3DS/
+ls
+open Lucas/School-Secretary/backend/db.sqlite3
+cat Lucas/School-Secretary/backend/db.sqlite3
+open Lucas/School-Secretary/backend/db.sqlite3
+rm Lucas/School-Secretary/backend/db.sqlite3
+open Lucas/School-Secretary/backend/db.sqlite3
+clear
+l
+cd
+clear
+shutdown now
+cd Downloads/
+tar xaf citra-linux-appimage-20240927-608383e.7z
+7z citra-linux-appimage-20240927-608383e.7z
+7z 
+7z --help
+7z e citra-linux-appimage-20240927-608383e.7z
+l
+rm   `11-Jacomo Stávale - Elementos de Matemática - Quarto Volume - 3ª ed. 1944.pdf` `2025 - Termo de Consentimento - Projeto Nativos do Futuro - revAsJur .docx (1).pdf` `2025 - Termo de Consentimento - Projeto Nativos do Futuro - revAsJur .docx.pdf`  `Avaliação Redação ENEM.pdf` 
+rm *.pdf
+l
+rm README*
+l
+rm `JIESP 2025 TABELA DE JOGOS.docx` 'Sekiro - Shadows Die Twice [FitGirl Repack]/'
+rm -rf `JIESP 2025 TABELA DE JOGOS.docx` 'Sekiro - Shadows Die Twice [FitGirl Repack]/'
+l
+7z e citra-linux-appimage-20240927-608383e.7z
+ls
+rm README.txt
+7z e citra-linux-appimage-20240927-608383e.7z 
+7z x citra-linux-appimage-20240927-608383e.7z 
+ls
+file citra-linux-appimage-20240927-608383e.7z
+rm *
+ls
+l
+7z l citra-linux-appimage-20240927-608383e.7z
+7z e citra-linux-appimage-20240927-608383e.7z
+l
+cat README.txt
+flatpak install azahar
+cd Games/
+cd ROMS/
+cd Nintendo3DS/
+ls
+unzip `~/Downloads/Pokemon X (World) (EnJaFrDeEsItKo) (Legit CIA).zip`
+l
+unzip `~/Downloads/Pokemon Y (World) (EnJaFrDeEsItKo) (Legit CIA).zip`
+l
+7z x `~/Downloads/Pokemon Omega Ruby (USA) (EnJaFrDeEsItKo) (Rev 2).7z`
+l
+sudo pacman -Ss cia
+sudo pacman -Ss decrypt
+sudo pacman -Ss decr
+sudo pacman -Ss cryp
+sudo pacman -Ss crypt
+sudo pacman -Ss b3ds
+sudo pacman -Ss 3ds
+cd Games/ROMS/
+cd Nintendo3DS/
+l
+rm  `Pokemon X (World) (En,Ja,Fr,De,Es,It,Ko) (Legit CIA).cia` `Pokemon Y (World) (En,Ja,Fr,De,Es,It,Ko) (Legit CIA).cia`
+l
+rm readme.txt
+l
+7z x `~/Downloads/Pokemon Y (USA) (EnJaFrDeEsItKo) (1).7z`
+7z x `~/Downloads/Pokemon X (USA) (EnJaFrDeEsItKo) (1).7z`
+l
+7z x `~/Downloads/Pokemon X (USA) (EnJaFrDeEsItKo) (1).7z`
+7z x `~/Downloads/Pokemon X (USA) (EnJaFrDeEsItKo).7z`
+l
+rm readme.txt
+l
+cd Games/
+cd ROMS/
+l
+cd Nintendo3DS/
+l
+mv `Pokemon Omega Ruby (USA) (En,Ja,Fr,De,Es,It,Ko) (Rev 2).3ds` `Pokemon Omega Ruby (USA) (En,Ja,Fr,De,Es,It,Ko) (Rev 2).cci`
+mv `Pokemon X (USA) (En,Ja,Fr,De,Es,It,Ko).3ds` `Pokemon X (USA) (En,Ja,Fr,De,Es,It,Ko).cci`
+mv `Pokemon Y (USA) (En,Ja,Fr,De,Es,It,Ko).3ds` `Pokemon Y (USA) (En,Ja,Fr,De,Es,It,Ko).cci`
+l
+alsamix
+wireplumber
+wireplumber --help
+wireplumber status
+man wireplumber 
+wpctl --help
+wpctl status
+wpctl --help
+wpctl status
+wpctl -h
+man wpctl 
+wpctl get-volume
+wpctl status
+wpctl stats
+wpctl status
+wpctl 
+wpctl status
+sudo wpctl status
+man wpctl
+sudo systemctl stauts pipewire
+sudo systemctl status pipewire
+sudo pacman -Ss pipewire
+sudo systemctl status easy
+sudo systemctl search easy
+sudo systemctl search
+sudo systemctl --help
+sudo systemctl list-dependencies
+sudo systemctl enable pipewire
+sudo systemctl --user enable pipewire
+sudo systemctl --user status pipewire
+cat dotfiles/hyprland/.config/hypr/conf/autostart.conf
+amixes
+amixer
+mpc 'Music/40 HZ Binaural beats ＂FOCUS & CONCENTRATION＂ with Dr. Andrew Huberman [pQI64hD2sJw].flac'
+amixes
+amixer
+pkill easyeffects 
+mpv  'Music/40 HZ Binaural beats ＂FOCUS & CONCENTRATION＂ with Dr. Andrew Huberman [pQI64hD2sJw].flac'
+sudo pacman -Ss mda
+sudo pacman lv2-plugins
+sudo pacman -S lv2-plugins
+cd Downloads/
+l
+tar xaf desmume-0.9.13.tar.xz
+l
+cd desmume-0.9.13/
+l
+cd desmume/
+l
+cat README.LIN
+flatpak install flathub org.desmume.DeSmuME
+cd Games/
+ls
+mkdir ROMS/NDS
+cd ROMS/
+mv NDS/ NintendoDS
+cd Downloads/
+unzip *.zip
+l
+unzip `Pokemon HeartGold (U)(Xenophobia).zip`
+l
+unzip `Pokemon SoulSilver (U)(Xenophobia).zip`
+mv *.nds ~/Games/ROMS/
+cd ~/Games/ROMS/
+ls
+mv *.nds NintendoDS/
+l
+lt
+flatpak uninstall desm
+flatpak install flathub net.kuribo64.melonDS
+shutdown now
+sudo pacman -Ss gemini
+sudo pacman -Ss cli
+npm install -g @google/gemini-cli<\n>gemini
+sudo npm install -g @google/gemini-cli
+gemini
+l
+ld
+ls
+cd dotfiles/
+cd nu
+cd .config/nushell/
+ls
+gemini
+cat /home/Admin/dotfiles/nu/.config/nushell/scripts/custom-completions/auto-generate/completions/a2enmod.nu
+ls
+cd scripts/
+l
+cd custom-completions/
+l
+cat mod.nu
+vim auto-generate/completions/apt-build.nu
+vim mod.nu
+vim auto-generate/completions/apt-build.nu
+vim mod.nu
+cd auto-generate/
+ls
+cd completions/
+l
+cat 7z.nu
+cat 7za.nu
+open 7za.nu
+open  apack.nu
+open  alias.nu
+vim apt-build.nu
+vim /home/Admin/dotfiles/nu/.config/nushell/scripts/custom-completions/auto-generate/completions/asciidoctor.nu
+vim /home/Admin/dotfiles/nu/.config/nushell/scripts/custom-completions/auto-generate/completions/complete.nu
+vim /home/Admin/dotfiles/nu/.config/nushell/scripts/custom-completions/auto-generate/completions/cpupower.nu
+nushell
+yay -S carapace-bin
+sudo pacman -Ss carapace
+sudo yay -S carapace
+cat dotfiles/nu/.config/nushell/config.nu
+clear
+ls
+gemini
+cd ..
+ks
+ls
+l
+ls
+gemini
+open
+ls
+l
+code config.nu
+ls
+l
+ls
+cd dotfiles/nu/.config/nushell/
+ls
+cd Dockerfiles/
+cat dotfiles/nu/.config/nushell/scripts/themes/nu-themes/dracula.nu
+ls
+l
+git Notes.md
+git status
+git .dbclient/
+git dotfiles/
+git --help
+asdfasdfasdfasdf
+aasdfasdfasdfas
+sdfasdasdfsad
+asdflkajsldkfjasldf
+update terminal
+cd Dockerfiles/
+ls
+cd
+gemini
+open let w
+docker compose --help
+cd
+which cd
+cd --help
+cd dotfiles/
+ls
+cd nu/
+ls
+cd .config/nushell/
+ls
+cd modules/
+ls
+cd awesome-nu/
+l
+cd ..
+rm -rf modules/awesome-nu/
+ls
+l
+cd Downloads/
+ls
+l
+cd Games/
+cd /etc/
+ls
+cd apparmor/default_unconfined.template
+ack-completions ack 
+u
+cd
+cd Downloads/
+ls
+cd desmume-0.9.13/
+l
+cd tools/
+l
+clear
+cd Downloads/
+echo $PATH
+echo $env.PATH
+echo $env.PROMPT_COMMAND
+nu-check bak/
+nu-check 
+nu-check docker
+composer-completions composer browse 
+sudo pacman -Rns nushell
