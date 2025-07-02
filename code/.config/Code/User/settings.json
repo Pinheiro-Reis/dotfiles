@@ -8,8 +8,9 @@
 	"editor.fontFamily": "JetBrains Mono Nerd Font Mono",
 	"editor.fontLigatures": false,
 	"editor.fontSize": 16,
-	"editor.lineHeight": 1.5,
 	"editor.fontWeight": "450",
+	"editor.inlayHints.enabled": "off",
+	"editor.lineHeight": 1.5,
 	"editor.minimap.enabled": false,
 	"editor.parameterHints.enabled": false,
 	"editor.renderLineHighlight": "none",
@@ -85,11 +86,15 @@
 	"window.menuBarVisibility": "compact",
 	"window.titleBarStyle": "custom",
 	"workbench.activityBar.location": "hidden",
+	"workbench.colorCustomizations": {
+		"sideBar.foreground": "#ffffff"
+	},
 	"workbench.colorTheme": "Min Dark",
 	"workbench.editor.labelFormat": "short",
 	"workbench.externalBrowser": "chromium",
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
 	"workbench.startupEditor": "newUntitledFile",
+	"workbench.tree.renderIndentGuides": "always",
 	"workbench.statusBar.visible": false,
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter"
