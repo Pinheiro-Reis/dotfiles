@@ -198,6 +198,7 @@ qt6-websockets
 qt6-webview
 qt6ct
 reflector
+ripgrep
 rofi-wayland
 rubberband-lv2
 rust

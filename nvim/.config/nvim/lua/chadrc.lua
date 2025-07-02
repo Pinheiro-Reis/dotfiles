@@ -2,7 +2,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "pastelDark",
+	theme = "pastelbeans",
 
 	hl_override = {
 		Comment = { italic = true },
@@ -16,5 +16,6 @@ M.ui = {
          lazyload = false
      }
 }
+M.colorify = { enabled = true }
 
 return M
