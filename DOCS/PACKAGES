@@ -201,6 +201,7 @@ reflector
 rofi-wayland
 rubberband-lv2
 rust
+rust-src
 samplv1-lv2
 sddm
 setbfree-lv2
