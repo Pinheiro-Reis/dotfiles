@@ -2,13 +2,13 @@
 
 * {
 	font-family: "MesloLGS Nerd Font";
-	font-size: 12px;
+	font-size: 14px;
 	min-height: 0;
 	font-weight: bold;
 }
 
 window#waybar {
-	background: transparent;
+	background-color: #000000;
 	/* background-color: @crust; */
 	color: @overlay2;
 	transition-property: background-color;
@@ -24,30 +24,29 @@ button {
 
 button:hover {
 	background: inherit;
-	color: @mauve;
-	border-top: 2px solid @mauve;
+	border-top: 1px solid @mauve;
 }
 
-#window {
+/* #window {
 	margin: 0px;
 	padding-left: 0;
 	padding-right: 0;
-}
+} */
 
 #workspaces button {
-	padding: 4px;
+	padding: 2px;
 }
 
 #workspaces button.focused {
 	background-color: rgba(0, 0, 0, 0.3);
 	color: @rosewater;
-	border-top: 2px solid @rosewater;
+	border-top: 1px solid @rosewater;
 }
 
 #workspaces button.active {
 	background-color: rgba(0, 0, 0, 0.1);
 	color: @mauve;
-	border-top: 2px solid @mauve;
+	border-top: 1px solid @mauve;
 }
 
 #workspaces button.urgent {
@@ -66,8 +65,8 @@ button:hover {
 #network,
 #mode,
 #scratchpad {
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	margin-left: 4px;
 	margin-right: 4px;
 	padding-left: 4px;
@@ -75,23 +74,19 @@ button:hover {
 }
 
 #clock {
-	color: @maroon;
-	border-bottom: 2px solid @maroon;
+	border-bottom: none;
 }
 
 #clock.date {
-	color: @mauve;
-	border-bottom: 2px solid @mauve;
+	border-bottom: none;
 }
 
 #wireplumber {
-	color: @blue;
-	border-bottom: 2px solid @blue;
+	border-bottom: none;
 }
 
 #network {
-	color: @yellow;
-	border-bottom: 2px solid @yellow;
+	border-bottom: none;
 }
 
 #idle_inhibitor {
@@ -105,7 +100,7 @@ button:hover {
 
 #battery {
 	color: @green;
-	border-bottom: 2px solid @green;
+	border-bottom: none;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
