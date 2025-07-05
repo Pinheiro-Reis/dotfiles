@@ -32,7 +32,8 @@
 	},
 	"emmet.includeLanguages": { "django-html": "html" },
 	"files.associations": {
-		"**/templates/*.html": "django-html"
+		"**/templates/*.html": "django-html",
+		"*.yaml": "yaml"
 	},
 	"git.confirmSync": false,
 	"git.defaultBranchName": "master",
@@ -96,13 +97,22 @@
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.statusBar.visible": false,
+	"window.commandCenter": false,
+	"terminal.integrated.env.linux": {},
+	"database-client.autoSync": true,
+	"yaml.format.enable": true,
+	"yaml.format.singleQuote": false,
+	"yaml.format.printWidth": 80,
+	"yaml.format.proseWrap": "preserve",
+	"[github-actions-workflow]": {
+		"editor.autoIndent": "advanced"
+	},
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter"
 	},
-	"[java]": {
-		"editor.defaultFormatter": "Oracle.oracle-java"
-	},
-	"window.commandCenter": false,
-	"terminal.integrated.env.linux": {},
-	"database-client.autoSync": true
+	"[yaml]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	}
 }
