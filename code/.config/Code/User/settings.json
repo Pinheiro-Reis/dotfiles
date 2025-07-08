@@ -21,6 +21,16 @@
 	"editor.suggestSelection": "first",
 	"editor.tabSize": 4,
 	"editor.wordWrap": "on",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "string.quoted",
+				"settings": {
+					"foreground": "#ffffff" // Ou use uma cor neutra
+				}
+			}
+		]
+	},
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
@@ -80,6 +90,7 @@
 	},
 
 	"terminal.integrated.defaultProfile.linux": "zsh",
+
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"typescript.suggest.autoImports": true,
 	"typescript.preferences.preferTypeOnlyAutoImports": true,
@@ -90,7 +101,7 @@
 	"workbench.colorCustomizations": {
 		"sideBar.foreground": "#ffffff"
 	},
-	"workbench.colorTheme": "Min Dark",
+	"workbench.colorTheme": "Min Darker Theme (by GmsGarcia)",
 	"workbench.editor.labelFormat": "short",
 	"workbench.externalBrowser": "chromium",
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
@@ -116,5 +127,6 @@
 		"editor.insertSpaces": true,
 		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
-	"makefile.configureOnOpen": true
+	"makefile.configureOnOpen": true,
+	"editor.autoClosingQuotes": "always"
 }
