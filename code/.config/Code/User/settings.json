@@ -7,7 +7,7 @@
 	"editor.formatOnSave": true,
 	"editor.fontFamily": "JetBrains Mono Nerd Font Mono",
 	"editor.fontLigatures": false,
-	"editor.fontSize": 16,
+	"editor.fontSize": 14,
 	"editor.fontWeight": "450",
 	"editor.inlayHints.enabled": "off",
 	"editor.lineHeight": 1.5,
@@ -98,6 +98,7 @@
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.statusBar.visible": false,
 	"window.commandCenter": false,
+	"window.zoomLevel": 1,
 	"terminal.integrated.env.linux": {},
 	"database-client.autoSync": true,
 	"yaml.format.enable": true,
@@ -114,5 +115,6 @@
 		"editor.tabSize": 2,
 		"editor.insertSpaces": true,
 		"editor.defaultFormatter": "redhat.vscode-yaml"
-	}
+	},
+	"makefile.configureOnOpen": true
 }
