@@ -5,7 +5,7 @@
 # -----------------------------------------------------
 # Exports
 # -----------------------------------------------------
-export EDITOR=vim
+export EDITOR=emacs
 export PATH="/usr/lib/ccache/bin/:$PATH"
 export PATH="$HOME/.cargo/bin/:$PATH"
 export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
