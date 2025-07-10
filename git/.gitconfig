@@ -5,3 +5,5 @@
 	defaultBranch = master
 [advice]
 	detachedHead = false
+[core]
+	excludesFile = ~/.gitignore_global
