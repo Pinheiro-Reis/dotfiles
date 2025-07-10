@@ -2,7 +2,7 @@
 
 * {
 	font-family: "MesloLGS Nerd Font";
-	font-size: 14px;
+	font-size: 12px;
 	min-height: 0;
 	font-weight: bold;
 }
@@ -24,17 +24,19 @@ button {
 
 button:hover {
 	background: inherit;
-	border-top: 1px solid @mauve;
+	border-bottom: 1px solid @mauve;
 }
 
-/* #window {
+#window {
 	margin: 0px;
 	padding-left: 0;
 	padding-right: 0;
-} */
+} 
 
 #workspaces button {
-	padding: 2px;
+    padding: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 #workspaces button.focused {
@@ -45,7 +47,7 @@ button:hover {
 
 #workspaces button.active {
 	background-color: @mauve;
-  color:#000000;
+	color:#000000;
 	border-top: 1px solid @mauve;
 }
 
