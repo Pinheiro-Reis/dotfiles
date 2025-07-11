@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode Nerd Font:pixelsize=17:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "FiraCode Nerd Font:pixelsize=16:antialias=true:autohint=true";
+static int borderpx = 12;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -196,7 +196,7 @@ static MouseShortcut mshortcuts[] = {
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
-	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
+	{ TERMMOD,              XK_c,           sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
