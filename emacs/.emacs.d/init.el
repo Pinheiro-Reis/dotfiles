@@ -1,7 +1,7 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-(set-frame-font "JetBrainsMono Nerd Font 14" nil t)
+(set-frame-font "JetBrainsMono Nerd Font 12" nil t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

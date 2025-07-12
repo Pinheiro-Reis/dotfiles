@@ -1,1 +1,1 @@
-zsh-syntax-highlighting.zsh
+source ./zsh-syntax-highlighting
