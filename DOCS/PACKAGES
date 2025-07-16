@@ -75,10 +75,13 @@ geonkick-lv2
 ghidra
 git
 gmsynth.lv2
+gnome-chess
 gnome-clocks
 grim
 grimblast-git
 grub
+gst-plugins-bad
+gst-plugins-ugly
 gtkmm
 guitarix
 gum
@@ -237,6 +240,7 @@ ttf-ms-fonts
 ttf-wps-fonts
 tumbler
 ufw
+uget
 unrar
 unzip
 vaporizer2-lv2
