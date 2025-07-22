@@ -3,10 +3,10 @@
 
 * {
 	all: unset;
-	font-family: "Inter";
+	font-family: "JetBrainsMono Nerd Font";
 	font-size: 12px;
+	font-weight: 900;
 	min-height: 0;
-	font-weight: bold;
 }
 
 window#waybar {
@@ -71,6 +71,7 @@ button:hover {
 }
 
 #clock {
+	background-color: black;
 	border-bottom: none;
 }
 
