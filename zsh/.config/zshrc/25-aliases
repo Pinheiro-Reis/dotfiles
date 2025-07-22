@@ -14,7 +14,6 @@ alias cleanup='~/.config/ml4w/scripts/cleanup.sh'
 alias t="trash-put"
 alias tc="rm -rf ~/.local/share/Trash/*"
 alias tmux="tmux -2"
-alias okular="org.kde.okular"
 alias msdl="yt-dlp -f ba -x --audio-format flac --audio-quality 0"
 alias v="vim"
 alias cc="clang -Wall -Wextra -Wpedantic -g"

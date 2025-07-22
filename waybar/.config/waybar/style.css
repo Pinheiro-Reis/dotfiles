@@ -1,58 +1,53 @@
-@import "mocha.css";
+@define-color white rgba(220, 220, 220, 1);
+@define-color black rgba(0, 0, 0, 1);
 
 * {
-	font-family: "MesloLGS Nerd Font";
+	all: unset;
+	font-family: "Inter";
 	font-size: 12px;
 	min-height: 0;
 	font-weight: bold;
 }
 
 window#waybar {
-	background-color: #000000;
-	/* background-color: @crust; */
-	color: @overlay2;
+	background-color: @black;
+	color: @white;
 	transition-property: background-color;
 	transition-duration: 0.1s;
-	border-bottom: 0px solid @overlay1;
 }
 
 button {
-	box-shadow: inset 0 -3px transparent;
-	border: none;
-	border-radius: 0;
+	margin: 0px;
 }
 
 button:hover {
 	background: inherit;
-	border-bottom: 1px solid @mauve;
+	border-bottom: 1px solid @white;
 }
 
 #window {
 	margin: 0px;
-	padding-left: 0;
-	padding-right: 0;
-} 
+}
 
 #workspaces button {
-    padding: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+	padding: 1px 4px 0px 4px;
+	min-width: 10px;
+	min-height: 10px;
 }
 
 #workspaces button.focused {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: @black;
 	color: #7777ff;
-	border-top: 1px solid @rosewater;
+	border-top: 1px solid @white;
 }
 
 #workspaces button.active {
-	background-color: @mauve;
-	color:#000000;
-	border-top: 1px solid @mauve;
+	background-color: @white;
+	color: @black;
 }
 
 #workspaces button.urgent {
-	background-color: #eb4d4b;
+	background-color: #ff0400;
 }
 
 #clock,
@@ -97,27 +92,15 @@ button:hover {
 }
 
 #idle_inhibitor.activated {
-	color: @red;
-}
-
-#battery {
-	color: @green;
-	border-bottom: none;
+	color: #ff0400;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-	margin-left: 0;
-}
+/* .modules-left > widget:first-child > #workspaces { */
+/* margin-left: 0; */
+/*} */
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-	margin-right: 0;
-}
-
-#custom-vpn {
-	color: @lavender;
-	border-radius: 15px;
-	padding-left: 6px;
-	padding-right: 6px;
-}
+/* .modules-right > widget:last-child > #workspaces { */
+/* margin-right: 0; */
+/* } */

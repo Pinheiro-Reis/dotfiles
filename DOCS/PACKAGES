@@ -96,11 +96,13 @@ hyprpaper
 hyprpicker
 hyprshade
 infamousplugins
+inter-font
 jc303-lv2
 jdk21-openjdk
 jq
 kalzium
 lib32-flac
+lib32-openal
 libappimage
 libisoburn
 libreoffice-fresh
@@ -137,6 +139,7 @@ nwg-look
 ob-xd-lv2
 obsidian
 odin2-synthesizer-lv2
+okular
 openssh
 opnplug-lv2
 otf-font-awesome
@@ -172,6 +175,7 @@ qrencode
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-svg
+qt5ct
 qt6-3d
 qt6-5compat
 qt6-charts
@@ -304,7 +308,6 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xreader
 yay
 yoshimi-lv2
 yt-dlp

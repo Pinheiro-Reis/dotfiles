@@ -12,7 +12,7 @@ ZSH_THEME=personal
 # oh-myzsh plugins
 # -----------------------------------------------------
 plugins=(
-    git
+    # git
     sudo
     web-search
     archlinux
