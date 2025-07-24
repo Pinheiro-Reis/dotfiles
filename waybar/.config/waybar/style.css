@@ -17,12 +17,15 @@ window#waybar {
 }
 
 button {
+	color: @white;
 	margin: 0px;
+	border-radius: 0;
 }
 
 button:hover {
 	background: inherit;
-	border-bottom: 1px solid @white;
+	border: 0px;
+	border-bottom: @white 1px solid;
 }
 
 #window {
@@ -36,9 +39,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-	background-color: @black;
 	color: #7777ff;
-	border-top: 1px solid @white;
 }
 
 #workspaces button.active {
@@ -71,7 +72,6 @@ button:hover {
 }
 
 #clock {
-	background-color: black;
 	border-bottom: none;
 }
 

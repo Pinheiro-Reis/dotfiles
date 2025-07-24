@@ -26,11 +26,11 @@
 		"format-wifi": "<span size='10000' foreground='#f5e0dc'>  </span>{essid}",
 		"format-ethernet": "<span size='10000' foreground='#f5e0dc'>  </span>{gwaddr}",
 		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "<span size='10000' foreground='#f5e0dc'> </span>Disconnected",
+		"format-disconnected": "<span size='10000' foreground='#f5e0dc'> </span>OFF",
 		"tooltip-format": "{ifname} via {gwaddri}",
 		"tooltip-format-wifi": "WF: {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
 		"tooltip-format-ethernet": "ETH:\t{gwaddr}\nIP:\t{ipaddr}\nUP:\t{bandwidthUpBits}\nDOWN:\t{bandwidthDownBits}",
-		"tooltip-format-disconnected": "Disconnected",
+		"tooltip-format-disconnected": "OFF",
 		"on-click": "~/.config/ml4w/settings/networkmanager.sh"
 	},
 	"wireplumber": {
