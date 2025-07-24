@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/Admin/.gtkrc-2.0.mine"
-gtk-theme-name="Raleigh"
-gtk-icon-theme-name="breeze"
+gtk-theme-name="WhiteSur-Dark"
+gtk-icon-theme-name="WhiteSur-dark"
 gtk-font-name="Inter 12"
 gtk-cursor-theme-name="macOS"
 gtk-cursor-theme-size=24
@@ -15,5 +15,5 @@ gtk-enable-event-sounds=0
 gtk-enable-input-feedback-sounds=0
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintslight"
+gtk-xft-hintstyle="hintmedium"
 gtk-xft-rgba="rgb"

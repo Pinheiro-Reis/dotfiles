@@ -126,16 +126,15 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#ffffff", /* default foreground colour */
-	"#000000", /* default background colour */
+	"#0000ff", /* default background colour */
 };
-
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
 unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 256;
 
@@ -159,8 +158,8 @@ static unsigned int rows = 24;
  * Default colour and shape of the mouse cursor
  */
 static unsigned int mouseshape = XC_xterm;
-static unsigned int mousefg = 7;
-static unsigned int mousebg = 0;
+static unsigned int mousefg = 256;
+static unsigned int mousebg = 257;
 
 /*
  * Color used to display font attributes when fontconfig selected a font which

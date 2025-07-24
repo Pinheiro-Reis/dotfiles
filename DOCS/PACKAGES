@@ -119,14 +119,17 @@ lv2-example-plugins
 lv2file
 lvm2
 lxc
+lxde-icon-theme
 man-db
 mangohud
 master_me-lv2
+materia-gtk-theme
 mda.lv2
 mephisto.lv2
 midi_matrix.lv2
 moony.lv2
 mpv
+nautilus
 ncdu
 neovim
 network-manager-applet
@@ -217,6 +220,7 @@ ruby
 rust
 rust-src
 samplv1-lv2
+sassc
 sddm
 setbfree-lv2
 sfizz-lv2
@@ -231,7 +235,6 @@ sudo
 synthv1-lv2
 tesseract-data-eng
 tesseract-data-por
-thunar
 timeshift
 torbrowser-launcher
 trash-cli
