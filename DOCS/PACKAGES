@@ -46,6 +46,7 @@ distrho-ports-lv2
 dmidecode
 dnsmasq
 docker
+docker-buildx
 docker-compose
 dotnet-sdk
 dpf-plugins-lv2
@@ -103,6 +104,7 @@ jq
 kalzium
 lib32-flac
 lib32-openal
+lib32-pango
 libappimage
 libisoburn
 libreoffice-fresh
