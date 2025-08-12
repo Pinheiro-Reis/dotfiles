@@ -103,6 +103,9 @@ jdk21-openjdk
 jq
 kalzium
 lib32-flac
+lib32-gst-plugins-base
+lib32-gst-plugins-good
+lib32-gstreamer
 lib32-openal
 lib32-pango
 libappimage

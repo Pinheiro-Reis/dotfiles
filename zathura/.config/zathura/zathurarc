@@ -1,1 +1,16 @@
-include ./themes/zathura-gruvbox-light-soft
+set default-bg                  "rgba(245,245,245,1)"
+set default-fg                  "rgba(0,0,0,1)"
+
+set statusbar-bg                "rgba(240,240,240,1)"
+set statusbar-fg                "rgba(0,0,0,1)"
+
+set inputbar-bg                 "rgba(240,240,240,1)"
+set inputbar-fg                 "rgba(0,0,0,1)"
+
+set highlight-color             "rgba(50,50,200,0.5)"
+set highlight-active-color      "rgba(175,58,3,0.5)"   
+
+set recolor                     "true"
+set recolor-keephue             "true"
+set recolor-lightcolor          "rgba(245,245,245,1)"
+set recolor-darkcolor           "rgba(0,0,0,1)"
