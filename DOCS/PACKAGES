@@ -33,9 +33,9 @@ calf
 capitaine-cursors
 carapace
 cardinal-lv2
-chromium
 clamav
 clang
+composer
 copyq
 cowsay
 cpio
@@ -56,7 +56,6 @@ drumkv1-lv2
 easyeffects
 efibootmgr
 elephantdsp-roomreverb-lv2
-emacs
 eq10q
 eteroj.lv2
 eza
@@ -64,9 +63,11 @@ fabla
 fakechroot
 fastfetch
 feh
+firefox
 flac-doc
 flatpak
 fomp.lv2
+fontforge
 fuse2
 fzf
 galculator
@@ -145,6 +146,7 @@ noise-repellent
 nwg-dock-hyprland
 nwg-look
 ob-xd-lv2
+obs-studio
 obsidian
 odin2-synthesizer-lv2
 okular
@@ -161,6 +163,8 @@ perl-image-exiftool
 perl-yaml-tiny
 php
 php-apache
+php-pgsql
+php-sqlite
 picom
 pipewire-alsa
 pipewire-pulse
@@ -219,7 +223,7 @@ qt6-webview
 qt6ct
 reflector
 ripgrep
-rofi-wayland
+rofi
 rubberband-lv2
 ruby
 rust

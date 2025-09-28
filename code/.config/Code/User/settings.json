@@ -26,7 +26,7 @@
 			{
 				"scope": "string.quoted",
 				"settings": {
-					"foreground": "#ffffff" // Ou use uma cor neutra
+					"foreground": "#ffffff"
 				}
 			}
 		]
@@ -36,9 +36,9 @@
 	"explorer.confirmDragAndDrop": false,
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
-		"package.json": ".eslint*, eslint.config.*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
+		"package.json": ".eslint*, eslint.config.*, prettier*, .prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
 		"tailwind.config.*": "tailwind.config*, postcss.config*",
-		".env": ".env*, .venv*, env*, venv*"
+		".env": "env*, .env*, venv*, .venv*"
 	},
 	"emmet.includeLanguages": { "django-html": "html" },
 	"files.associations": {
@@ -117,7 +117,8 @@
 	"yaml.format.printWidth": 80,
 	"yaml.format.proseWrap": "preserve",
 	"[github-actions-workflow]": {
-		"editor.autoIndent": "advanced"
+		"editor.autoIndent": "advanced",
+		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter"
@@ -128,5 +129,16 @@
 		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
 	"makefile.configureOnOpen": true,
-	"editor.autoClosingQuotes": "always"
+	"editor.autoClosingQuotes": "always",
+	"[dockercompose]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.autoIndent": "advanced",
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": false,
+			"strings": true
+		},
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	}
 }
