@@ -1,5 +1,6 @@
 {
 	"breadcrumbs.enabled": false,
+	// "clangd.arguments": ["-I./include"],
 	"debug.onTaskErrors": "debugAnyway",
 	"editor.colorDecorators": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -97,11 +98,9 @@
 	"window.confirmSaveUntitledWorkspace": false,
 	"window.menuBarVisibility": "compact",
 	"window.titleBarStyle": "custom",
-	"workbench.activityBar.location": "hidden",
 	"workbench.colorCustomizations": {
 		"sideBar.foreground": "#ffffff"
 	},
-	"workbench.colorTheme": "Min Darker Theme (by GmsGarcia)",
 	"workbench.editor.labelFormat": "short",
 	"workbench.externalBrowser": "chromium",
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
@@ -140,5 +139,22 @@
 			"strings": true
 		},
 		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"yaml.schemas": {
+		"file:///home/Admin/.vscode/extensions/continue.continue-1.2.6-linux-x64/config-yaml-schema.json": [
+			".continue/**/*.yaml"
+		]
+	},
+	"workbench.activityBar.location": "hidden",
+	"C_Cpp.intelliSenseEngine": "disabled",
+	"[c]": {
+		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+	},
+	"workbench.colorTheme": "Min Dark",
+	"[cpp]": {
+		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+	},
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer"
 	}
 }

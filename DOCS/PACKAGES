@@ -19,11 +19,13 @@ base-devel
 bat
 bc
 bchoppr
+bear
 bibata-cursor-theme-bin
 biber
 bitwarden
 blop.lv2
 blueman
+brave-bin
 breeze
 bsequencer
 bshapr
@@ -35,10 +37,12 @@ carapace
 cardinal-lv2
 clamav
 clang
+cloc
 composer
 copyq
 cowsay
 cpio
+cunit
 devtools
 dex
 dhcpcd
@@ -63,7 +67,6 @@ fabla
 fakechroot
 fastfetch
 feh
-firefox
 flac-doc
 flatpak
 fomp.lv2
@@ -147,12 +150,12 @@ nwg-dock-hyprland
 nwg-look
 ob-xd-lv2
 obs-studio
-obsidian
 odin2-synthesizer-lv2
 okular
 openssh
 opnplug-lv2
 otf-font-awesome
+packettracer
 pacman-contrib
 padthv1-lv2
 papirus-icon-theme
@@ -226,8 +229,7 @@ ripgrep
 rofi
 rubberband-lv2
 ruby
-rust
-rust-src
+rustup
 samplv1-lv2
 sassc
 sddm
@@ -245,7 +247,6 @@ synthv1-lv2
 tesseract-data-eng
 tesseract-data-por
 timeshift
-torbrowser-launcher
 trash-cli
 ttf-cascadia-code-nerd
 ttf-fira-code
@@ -266,6 +267,7 @@ vim
 virt-firmware
 virt-viewer
 visual-studio-code-bin
+vivaldi
 vlc
 vm.lv2
 vulkan-radeon
