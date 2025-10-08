@@ -106,7 +106,6 @@
 	"workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
 	"workbench.startupEditor": "newUntitledFile",
 	"workbench.tree.renderIndentGuides": "always",
-	"workbench.statusBar.visible": false,
 	"window.commandCenter": false,
 	"window.zoomLevel": 1,
 	"terminal.integrated.env.linux": {},
@@ -145,7 +144,6 @@
 			".continue/**/*.yaml"
 		]
 	},
-	"workbench.activityBar.location": "hidden",
 	"C_Cpp.intelliSenseEngine": "disabled",
 	"[c]": {
 		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
@@ -156,5 +154,6 @@
 	},
 	"[rust]": {
 		"editor.defaultFormatter": "rust-lang.rust-analyzer"
-	}
+	},
+	"workbench.activityBar.location": "hidden"
 }

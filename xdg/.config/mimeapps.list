@@ -1,11 +1,11 @@
 
 [Default Applications]
-application/pdf=vivaldi-stable.desktop
-inode/directory=vivaldi-stable.desktop
-text/html=vivaldi-stable.desktop
-x-scheme-handler/about=vivaldi-stable.desktop
-x-scheme-handler/http=vivaldi-stable.desktop
-x-scheme-handler/https=vivaldi-stable.desktop
-x-scheme-handler/mailto=brave-browser.desktop
-x-scheme-handler/unknown=vivaldi-stable.desktop
+application/pdf=firefox.desktop
+inode/directory=firefox.desktop
+text/html=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/mailto=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
 x-scheme-handler/postman=Postman.desktop
