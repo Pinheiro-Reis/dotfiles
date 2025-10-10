@@ -147,6 +147,10 @@ networkmanager
 nm-connection-editor
 nmap
 noise-repellent
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+nushell
 nwg-dock-hyprland
 nwg-look
 ob-xd-lv2
@@ -250,6 +254,7 @@ tesseract-data-por
 timeshift
 trash-cli
 ttf-cascadia-code-nerd
+ttf-dejavu
 ttf-fira-code
 ttf-fira-sans
 ttf-firacode-nerd
