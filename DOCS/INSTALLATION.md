@@ -89,7 +89,7 @@ Please be aware that these names should be substituted with the actual device pa
         Command (m for help): n
         Partition number: <Press Enter>
         First sector: <Press Enter>
-        Last sector, +/-sectors or +/-size{K,M,G,T,P}: +1GB
+        Last sector, +/-sectors or +/-size{K,M,G,T,P}: +2GB
 
         Command (m for help): t
         Partition type or alias (type L to list all): linux
