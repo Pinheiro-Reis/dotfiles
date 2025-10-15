@@ -116,8 +116,6 @@ lib32-pango
 libappimage
 libisoburn
 libreoffice-fresh
-libvirt
-libvirt-python
 linux
 linux-firmware
 linux-lts
@@ -270,8 +268,6 @@ unzip
 uv
 vaporizer2-lv2
 vim
-virt-firmware
-virt-viewer
 visual-studio-code-bin
 vlc
 vm.lv2
