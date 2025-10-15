@@ -89,6 +89,7 @@ grub
 gst-plugins-bad
 gst-plugins-ugly
 gtkmm
+guestfs-tools
 guitarix
 gum
 gvfs
@@ -186,6 +187,7 @@ python-psutil
 python-pywal
 python-screeninfo
 qbittorrent
+qemu-full
 qjackctl
 qmidiarp-lv2
 qrencode
@@ -245,6 +247,7 @@ speedtest-cli
 steam
 stow
 sudo
+swtpm
 synthv1-lv2
 tesseract-data-eng
 tesseract-data-por
@@ -261,6 +264,7 @@ ttf-meslo-nerd
 ttf-ms-fonts
 ttf-wps-fonts
 tumbler
+tuned
 ufw
 uget
 unrar
@@ -269,6 +273,7 @@ uv
 vaporizer2-lv2
 vim
 virt-manager
+virt-viewer
 visual-studio-code-bin
 vlc
 vm.lv2
