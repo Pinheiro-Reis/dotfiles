@@ -52,6 +52,7 @@ dnsmasq
 docker
 docker-buildx
 docker-compose
+docker-rootless-extras
 dotnet-sdk
 dpf-plugins-lv2
 dragonfly-reverb-lv2
@@ -160,7 +161,6 @@ okular
 openssh
 opnplug-lv2
 otf-font-awesome
-packettracer
 pacman-contrib
 padthv1-lv2
 papirus-icon-theme
