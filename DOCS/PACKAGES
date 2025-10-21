@@ -96,6 +96,7 @@ gvfs
 gvfs-mtp
 gxplugins.lv2
 htop
+hugo
 hypridle
 hyprland
 hyprlock
@@ -108,6 +109,7 @@ jc303-lv2
 jdk21-openjdk
 jq
 kalzium
+lazydocker
 lib32-flac
 lib32-gst-plugins-base
 lib32-gst-plugins-good
