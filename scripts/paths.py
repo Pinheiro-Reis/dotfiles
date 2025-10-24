@@ -45,6 +45,6 @@ def dests_path():
             rel = src_path.relative_to(SRC_ROOT)
             dest_path = USER_HOME / rel
 
-        DEST_PATHS.append((src_path, dest_path))
+        DEST_PATHS.append(dest_path)
 
     return DEST_PATHS
