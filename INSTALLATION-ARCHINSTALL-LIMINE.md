@@ -1,23 +1,26 @@
-1.  Install yout system with `archinstall`
+# Installation Guide
+
+1. Install yout system with `archinstall`
 
     ```bash
     # archinstall
     ```
 
-and reach this config (from Omarchy):
-| Section | Option |
-|---------------------------------|------------------------------------------------------------------------|
-| Mirrors and repositories | Select regions > Your country |
-| Disk configuration | Partitioning > Default partitioning layout > Select disk (space + enter) |
-| Disk > File system | btrfs (default structure: yes + use compression) |
-| Disk > Disk encryption | Encryption type: LUKS + Encryption password + Partitions (select the one) |
-| Hostname | Give your computer a name |
-| Bootloader | Limine |
-| Authentication > Root password | Set yours |
-| Authentication > User account | Add a user > Superuser: Yes > Confirm and exit |
-| Applications > Audio | pipewire |
-| Network configuration | Copy ISO network config |
-| Timezone | Set yours |
+    and reach this config (from Omarchy):
+
+    | Section                         | Option                                                                    |
+    |---------------------------------|---------------------------------------------------------------------------|
+    | Mirrors and repositories        | Select regions > Your country                                             |
+    | Disk configuration              | Partitioning > Default partitioning layout > Select disk (space + enter)  |
+    | Disk > File system              | btrfs (default structure: yes + use compression)                          |
+    | Disk > Disk encryption          | Encryption type: LUKS + Encryption password + Partitions (select the one) |
+    | Hostname                        | Give your computer a name                                                 |
+    | Bootloader                      | Limine                                                                    |
+    | Authentication > Root password  | Set yours                                                                 |
+    | Authentication > User account   | Add a user > Superuser: Yes > Confirm and exit                            |
+    | Applications > Audio            | pipewire                                                                  |
+    | Network configuration           | Copy ISO network config                                                   |
+    | Timezone                        | Set yours                                                                 |
 
 2. Install git and vim
 
@@ -28,11 +31,11 @@ and reach this config (from Omarchy):
 3. Download and install yay package
 
     ```bash
-    $ git clone https://aur.archlinux.org/yay.git
+    git clone https://aur.archlinux.org/yay.git
 
-    $ cd yay
+    cd yay
 
-    $ makepkg -si
+    makepkg -si
     ```
 
 4. Install limine auxiliar packages
