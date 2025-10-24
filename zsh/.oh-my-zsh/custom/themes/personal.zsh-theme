@@ -1,1 +1,0 @@
-# PROMPT="[ %{$fg[blue]%}%~%{$reset_color%} ] -> "
