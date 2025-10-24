@@ -8,9 +8,6 @@ POSH=agnoster
 # -----------------------------------------------------
 ZSH_THEME=personal
 
-# Set-up oh-my-zsh
-source $ZSH/oh-my-zsh.sh
-
 # -----------------------------------------------------
 # oh-myzsh plugins
 # -----------------------------------------------------
@@ -24,8 +21,10 @@ plugins=(
     # fast-syntax-highlighting
     copybuffer
     dirhistory
-    mise
 )
+
+# Set-up oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # -----------------------------------------------------
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
