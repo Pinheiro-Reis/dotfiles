@@ -1,0 +1,10 @@
+[user]
+	name = João Victor
+	email = joaovictorpinheiro2007@gmail.com
+[init]
+	defaultBranch = master
+[advice]
+	detachedHead = false
+[core]
+	excludesFile = ~/.gitignore_global
+	editor = vim
