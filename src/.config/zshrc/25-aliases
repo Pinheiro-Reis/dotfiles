@@ -12,17 +12,31 @@ alias vdl="yt-dlp -f bestvideo+bestaudio"
 alias cc="clang -Wall -Wextra -Wpedantic -g"
 
 # -----------------------------------------------------
-# ML4W Apps
-# -----------------------------------------------------
-alias ml4w='com.ml4w.welcome'
-alias ml4w-settings='com.ml4w.dotfilessettings'
-alias ml4w-hyprland='com.ml4w.hyprland.settings'
-alias ml4w-options='ml4w-hyprland-setup -m options'
-alias ml4w-sidebar='ags toggle sidebar'
-alias ml4w-diagnosis='~/.config/hypr/scripts/diagnosis.sh'
-alias ml4w-hyprland-diagnosis='~/.config/hypr/scripts/diagnosis.sh'
-alias ml4w-qtile-diagnosis='~/.config/ml4w/qtile/scripts/diagnosis.sh'
-alias ml4w-update='~/.config/ml4w/update.sh'
+# Git 
+# ----------------------------------------------------- 
+
+alias git='nocorrect git'
+alias g="git"
+git config --global alias.a 'add'
+git config --global alias.aa 'add --all'
+git config --global alias.b 'branch'
+git config --global alias.br 'branch --remote'
+git config --global alias.c 'commit -m'
+git config --global alias.ca 'commit --amend -m'
+git config --global alias.co 'checkout'
+git config --global alias.d 'diff'
+git config --global alias.ds 'diff --staged'
+git config --global alias.l 'log'
+git config --global alias.pl 'pull'
+git config --global alias.ps 'push'
+git config --global alias.r 'remote'
+git config --global alias.rb 'rebase'
+git config --global alias.rl 'reflog'
+git config --global alias.rs 'reset'
+git config --global alias.rt 'restore'
+git config --global alias.rts 'restore --staged'
+git config --global alias.s 'status'
+git config --global alias.sh 'show'
 
 # -----------------------------------------------------
 # Window Managers

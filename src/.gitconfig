@@ -8,3 +8,25 @@
 [core]
 	excludesFile = ~/.gitignore_global
 	editor = vim
+[alias]
+	a = add
+	ps = push
+	pl = pull
+	l = log
+	c = commit -m
+	s = status
+	co = checkout
+	b = branch
+	rs = reset
+	rb = rebase
+	rl = reflog
+	rt = restore
+	d = diff
+	rmt = remote
+	r = remote
+	ca = commit --amend -m
+	ds = diff --staged
+	br = branch --remote
+	rts = restore --staged
+	aa = add --all
+	sh = show
