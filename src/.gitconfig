@@ -23,6 +23,7 @@
 	rt = restore
 	d = diff
 	r = remote
+  cl = clean
 	ca = commit --amend -m
 	ds = diff --staged
 	br = branch --remote
