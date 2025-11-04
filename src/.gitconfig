@@ -22,12 +22,10 @@
 	rl = reflog
 	rt = restore
 	d = diff
-	rmt = remote
 	r = remote
 	ca = commit --amend -m
 	ds = diff --staged
 	br = branch --remote
-	rts = restore --staged
 	aa = add --all
 	sh = show
 	t = tag
