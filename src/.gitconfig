@@ -30,3 +30,4 @@
 	rts = restore --staged
 	aa = add --all
 	sh = show
+	t = tag

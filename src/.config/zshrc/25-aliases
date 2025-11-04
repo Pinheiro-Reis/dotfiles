@@ -37,6 +37,7 @@ git config --global alias.rt 'restore'
 git config --global alias.rts 'restore --staged'
 git config --global alias.s 'status'
 git config --global alias.sh 'show'
+git config --global alias.t 'tag'
 
 # -----------------------------------------------------
 # Window Managers
