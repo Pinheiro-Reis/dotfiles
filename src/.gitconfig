@@ -31,3 +31,5 @@
 	aa = add --all
 	sh = show
 	t = tag
+	m = merge
+	f = fetch
