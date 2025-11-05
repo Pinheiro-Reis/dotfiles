@@ -155,5 +155,6 @@
 	"[rust]": {
 		"editor.defaultFormatter": "rust-lang.rust-analyzer"
 	},
-	"workbench.activityBar.location": "hidden"
+	"workbench.activityBar.location": "hidden",
+	"workbench.editor.empty.hint": "hidden"
 }
