@@ -2,6 +2,7 @@
 
 ### Core Principles
 
+- Follow this rules all time, in all cases, read it over and over again to be sure that your actions are correct
 - Only comment when explicitly requested by the user, never comment any code in any other situation
 - Only comment in english, ever
 - Perform system testing when possible
