@@ -140,7 +140,7 @@
 		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
 	"yaml.schemas": {
-		"file:///home/Admin/.vscode/extensions/continue.continue-1.2.6-linux-x64/config-yaml-schema.json": [
+		"file:///home/Admin/.vscode/extensions/continue.continue-1.2.10-linux-x64/config-yaml-schema.json": [
 			".continue/**/*.yaml"
 		]
 	},
