@@ -3,6 +3,7 @@
 ### Core Principles
 
 - Only comment when explicitly requested by the user, never comment any code in any other situation
+- Only comment in english, ever
 - Perform system testing when possible
 - Always use English in code files, in structural parts that the developer sees
 - Always write in English in QWEN.md
