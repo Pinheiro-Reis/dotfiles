@@ -140,10 +140,10 @@
 		"editor.defaultFormatter": "redhat.vscode-yaml"
 	},
 	"yaml.schemas": {
-		"file:///home/Admin/.vscode/extensions/continue.continue-1.2.10-linux-x64/config-yaml-schema.json": [
-			".continue/**/*.yaml"
-		]
-	},
+        "file:///home/Admin/.vscode/extensions/continue.continue-1.2.10-linux-x64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ]
+    },
 	"C_Cpp.intelliSenseEngine": "disabled",
 	"[c]": {
 		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
