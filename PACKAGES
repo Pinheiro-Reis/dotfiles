@@ -181,6 +181,7 @@ pipewire-alsa
 pipewire-pulse
 plocate
 plymouth
+pnpm
 polkit-gnome
 postgresql
 python-ipykernel
@@ -342,6 +343,7 @@ yt-dlp
 zam-plugins
 zathura
 zathura-pdf-mupdf
+zed
 zsh
 zsh-completions
 zynaddsubfx
