@@ -1,11 +1,11 @@
-name: Gemini 2.0 Flash
+name: Gemini 2.5 Flash
 version: 1.0.2
 schema: v1
 
 models:
-  - name: Gemini 2.0 Flash
+  - name: Gemini 2.5 Flash
     provider: gemini
-    model: gemini-2.0-flash
+    model: gemini-2.5-flash
     apiKey: ${{ secrets.GEMINI_API_KEY }}
     roles:
       - chat
