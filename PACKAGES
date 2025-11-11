@@ -59,6 +59,7 @@ dpf-plugins-lv2
 dragonfly-reverb-lv2
 drumgizmo-lv2
 drumkv1-lv2
+dust
 easyeffects
 efibootmgr
 elephantdsp-roomreverb-lv2
@@ -68,6 +69,7 @@ eza
 fabla
 fakechroot
 fastfetch
+fd
 feh
 flac-doc
 flatpak
@@ -258,6 +260,7 @@ synthv1-lv2
 tesseract-data-eng
 tesseract-data-por
 timeshift
+tokei
 trash-cli
 ttf-cascadia-code-nerd
 ttf-dejavu
