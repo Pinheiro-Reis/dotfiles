@@ -21,6 +21,7 @@
 	rb = rebase
 	rl = reflog
 	rt = restore
+  rv = revert
 	d = diff
 	r = remote
   cl = clean
