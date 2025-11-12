@@ -98,6 +98,7 @@ gum
 gvfs
 gvfs-mtp
 gxplugins.lv2
+helix
 htop
 hugo
 hypridle
@@ -348,7 +349,6 @@ yt-dlp
 zam-plugins
 zathura
 zathura-pdf-mupdf
-zed
 zsh
 zsh-completions
 zynaddsubfx
